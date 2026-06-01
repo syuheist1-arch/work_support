@@ -36,6 +36,7 @@ model: sonnet
 - 令和8年度 危機管理: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E5%8D%B1%E6%A9%9F%E7%AE%A1%E7%90%86&SearchMax=250`
 - 令和8年度 システム: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&SearchMax=250`
 - 令和8年度 カメラ: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E3%82%AB%E3%83%A1%E3%83%A9&SearchMax=250`
+- 令和8年度 災害対策本部: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E7%81%BD%E5%AE%B3%E5%AF%BE%E7%AD%96%E6%9C%AC%E9%83%A8&SearchMax=250`
 - 令和7年度 映像: `https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E6%98%A0%E5%83%8F&SearchMax=250`
 - 令和7年度 通信: `https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E9%80%9A%E4%BF%A1&SearchMax=250`
 - 令和7年度 保守: `https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E4%BF%9D%E5%AE%88&SearchMax=250`
@@ -46,6 +47,15 @@ model: sonnet
 - 金額（数値部分は文字化けしない）
 - 電話番号・メールアドレス（担当課の特定に使う）
 - 読み取れた事業名・部局名
+
+**【Shift-JIS文字化け対処法（必須）】**
+鳥取県等のLotus DominoベースのDBはShift-JIS（CP932）エンコードで配信されるため、WebFetchで取得すると日本語テキストが文字化けする。
+以下の手順で事業名を特定すること:
+
+1. WebFetchで取得 → 数値・電話番号・メールアドレスを記録する（これらは文字化けしない）
+2. 電話番号またはメールアドレスが取得できた場合、WebSearchで「<電話番号> 鳥取県」または「<メールアドレス> 鳥取県」を検索し、担当課を特定する
+3. 事業名が不読の場合、WebSearchで「鳥取県 <取得できた部分的な文字列> <金額> 千円」等で補完検索する
+4. どうしても特定できない場合は「文字化けにより不読・出典URL記録済み」と記して出典URLを必ず残す
 
 文字化けで読めない項目は「文字化けにより不読」と記録し、出典URLは必ず残す。
 

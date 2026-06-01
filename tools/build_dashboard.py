@@ -34,17 +34,69 @@ def extract_date(text: str) -> str:
 
 
 def extract_top_attacks(text: str) -> list[str]:
-    """攻めどころ Top3 の見出し行を最大3件抽出する。"""
+    """攻めどころ表の提案テーマ列を最大3件抽出する。"""
     results = []
+    in_table = False
+    header_seen = False
     for line in text.splitlines():
-        if re.search(r"第[123一二三]位[：:]?\s*(.+)", line):
-            m = re.search(r"第[123一二三]位[：:]?\s*(.+)", line)
-            label = re.sub(r"[#*`]", "", m.group(1)).strip()
-            label = re.sub(r"\s*／\s*確度.*$", "", label).strip()
-            results.append(label)
-            if len(results) == 3:
+        if re.search(r"##.*攻めどころ", line):
+            in_table = True
+            header_seen = False
+            continue
+        if in_table:
+            if line.startswith("##"):
                 break
+            if "|" not in line:
+                continue
+            cols = [c.strip() for c in line.strip("|").split("|")]
+            if not header_seen:
+                if "提案テーマ" in line or "順位" in line:
+                    header_seen = True
+                continue
+            if re.match(r"^[-|:\s]+$", line):
+                continue
+            if len(cols) >= 2:
+                label = re.sub(r"[*`]", "", cols[1]).strip()
+                # remove status prefix like 【公告済み】
+                label = re.sub(r"^【[^】]+】\s*", "", label).strip()
+                if label and label != "-":
+                    results.append(label)
+                    if len(results) == 3:
+                        break
     return results
+
+
+def extract_status_counts(text: str) -> dict:
+    """攻めどころ表から案件ステータスの件数を集計する。"""
+    counts = {"公告済み": 0, "予算化・未公告": 0, "仕込み": 0}
+    in_table = False
+    header_seen = False
+    for line in text.splitlines():
+        if re.search(r"##.*攻めどころ", line):
+            in_table = True
+            header_seen = False
+            continue
+        if in_table:
+            if line.startswith("##"):
+                break
+            if "|" not in line:
+                continue
+            cols = [c.strip() for c in line.strip("|").split("|")]
+            if not header_seen:
+                if "提案テーマ" in line or "順位" in line:
+                    header_seen = True
+                continue
+            if re.match(r"^[-|:\s]+$", line):
+                continue
+            if len(cols) >= 2:
+                theme = cols[1]
+                if "公告済み" in theme:
+                    counts["公告済み"] += 1
+                elif "予算化" in theme or "未公告" in theme:
+                    counts["予算化・未公告"] += 1
+                elif "仕込み" in theme or "中長期" in theme:
+                    counts["仕込み"] += 1
+    return counts
 
 
 def extract_keypersons(text: str) -> str:
@@ -91,6 +143,7 @@ def collect_municipalities() -> list[dict]:
             continue
         text = source_path.read_text(encoding="utf-8")
         attacks = extract_top_attacks(text)
+        status = extract_status_counts(text)
         munis.append({
             "name": d.name,
             "source": source_name,
@@ -99,6 +152,7 @@ def collect_municipalities() -> list[dict]:
             "top_attack": attacks[0] if attacks else "-",
             "keypersons": extract_keypersons(text),
             "max_opportunity": extract_max_opportunity(text),
+            "status": status,
             "markdown": text,
         })
     return munis
@@ -195,6 +249,17 @@ header .built-at { font-size: .72rem; color: var(--text-muted); margin-left: aut
   gap: .4rem;
 }
 .card-attacks li::before { content: "▸"; color: var(--accent); flex-shrink: 0; }
+.status-badges { display: flex; gap: .4rem; flex-wrap: wrap; margin: .5rem 0 .4rem; }
+.badge-status {
+  font-size: .65rem;
+  padding: .15em .6em;
+  border-radius: 99px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.badge-announced { background: color-mix(in srgb, var(--green) 20%, transparent); color: var(--green); border: 1px solid var(--green); }
+.badge-budgeted  { background: color-mix(in srgb, var(--yellow) 20%, transparent); color: var(--yellow); border: 1px solid var(--yellow); }
+.badge-pipeline  { background: color-mix(in srgb, var(--text-muted) 20%, transparent); color: var(--text-muted); border: 1px solid var(--text-muted); }
 
 /* ── Table ── */
 .table-wrap { overflow-x: auto; }
@@ -313,9 +378,9 @@ tr.active-row td { background: color-mix(in srgb, var(--accent) 10%, transparent
         <thead>
           <tr>
             <th>自治体</th>
+            <th>案件ステータス</th>
             <th>攻めどころ Top</th>
             <th>想定キーパーソン</th>
-            <th>最大の機会</th>
             <th>更新日</th>
           </tr>
         </thead>
@@ -359,9 +424,16 @@ function buildCards() {
   DATA.forEach((d, i) => {
     const el = document.createElement('div');
     el.className = 'card';
+    const s = d.status || {};
+    const badges = [
+      s['公告済み'] > 0 ? `<span class="badge-status badge-announced">公告済み ${s['公告済み']}件</span>` : '',
+      s['予算化・未公告'] > 0 ? `<span class="badge-status badge-budgeted">予算化・未公告 ${s['予算化・未公告']}件</span>` : '',
+      s['仕込み'] > 0 ? `<span class="badge-status badge-pipeline">仕込み ${s['仕込み']}件</span>` : '',
+    ].filter(Boolean).join('');
     el.innerHTML = `
       <div class="card-name">${d.name}</div>
       <div class="card-date">更新: ${d.date} &nbsp;|&nbsp; ${d.source}</div>
+      <div class="status-badges">${badges}</div>
       <ul class="card-attacks">${d.attacks.map(a => `<li>${a}</li>`).join('')}</ul>
     `;
     el.addEventListener('click', () => showDetail(i));
@@ -373,11 +445,17 @@ function buildTable() {
   const tbody = document.getElementById('table-body');
   DATA.forEach((d, i) => {
     const tr = document.createElement('tr');
+    const s2 = d.status || {};
+    const badges2 = [
+      s2['公告済み'] > 0 ? `<span class="badge-status badge-announced">公告済み ${s2['公告済み']}</span>` : '',
+      s2['予算化・未公告'] > 0 ? `<span class="badge-status badge-budgeted">予算化 ${s2['予算化・未公告']}</span>` : '',
+      s2['仕込み'] > 0 ? `<span class="badge-status badge-pipeline">仕込み ${s2['仕込み']}</span>` : '',
+    ].filter(Boolean).join(' ');
     tr.innerHTML = `
       <td><a class="muni-link" onclick="showDetail(${i})">${d.name}</a></td>
+      <td style="white-space:nowrap">${badges2 || '-'}</td>
       <td>${d.top_attack}</td>
       <td>${d.keypersons}</td>
-      <td style="max-width:240px;font-size:.75rem">${d.max_opportunity}</td>
       <td style="white-space:nowrap">${d.date}</td>
     `;
     tbody.appendChild(tr);
@@ -411,6 +489,7 @@ def build():
             "top_attack": m["top_attack"],
             "keypersons": m["keypersons"],
             "max_opportunity": m["max_opportunity"],
+            "status": m["status"],
             "markdown": m["markdown"],
         }
         for m in munis
