@@ -1,52 +1,131 @@
 # 予算収集結果: 鳥取県
-
 - 収集日: 2026-06-01
-- 対象: 令和7年度当初予算（中心）／令和6年度当初予算（推移把握）／直近補正予算
-- 自治体: 鳥取県（都道府県としての県）
+- 対象: 令和7年度当初予算（主）、令和6年度当初予算（参考・一部）、令和7年度補正予算各号（一部）
+
+---
 
 ## 抽出した防災関連費目
 
-| 事業名 | 費目/分野 | 金額 | 当初/補正 | 前年比・増減(資料に明記がある場合のみ) | 出典URL | 資料発行日 |
-|--------|----------|------|-----------|------|---------|------------|
-| （取得不可：実資料に到達できず、事業名・金額を確認できなかった） | - | 取得不可 | - | - | - | - |
+### 令和7年度当初予算
 
-> 注: 本表に記載できる確定した防災関連費目・金額は得られなかった。鉄則に従い、金額・事業名・出典の創作は行わない。
+**出典について**  
+原資料PDF（主要事業一覧）: https://www.pref.tottori.lg.jp/secure/1381609/R7tousyosyuyouzigyou.pdf  
+原資料掲載ページ: https://www.pref.tottori.lg.jp/321465.htm （資料発行日: 令和7年2月）  
+PDFはバイナリ圧縮のため直接読取不可。下表の数値はnote記事（小沢瑞鶴、https://note.com/zuikaku_ozawa_/n/n6dd68f4af447）が同PDFを転記したものから抽出。原資料PDFの直接確認を推奨する。
+
+| 事業名 | 所管部局 | 金額（千円） | 当初/補正 | 前年比・増減（資料記載分） | 出典URL | 資料発行日 |
+|--------|---------|-------------|-----------|--------------------------|---------|------------|
+| 大規模災害対応TKB２４プロジェクト | 危機管理部 | 58,792 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 地震津波被害想定見直し事業 | 危機管理部 | 34,356 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 実効的避難体制整備事業 | 危機管理部 | 1,572 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 防災・減災のための危険木事前伐採集中対策事業 | 危機管理部 | 20,000 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 大規模災害対応防災DX連携体制整備事業 | 危機管理部 | 38,435 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 危機管理通信ネットワーク機能向上事業 | 危機管理部 | 281,958 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 防災DX情報迅速発信事業 | 危機管理部 | 27,538 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 危機管理情報システム管理運営事業 | 危機管理部 | 229,929 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 官民連携とっとりドローン活用推進事業（危機管理部分） | 危機管理部 | 5,500 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 島根原子力発電所２号機の特別監視対策事業 | 危機管理部 | 251,116 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 原子力防災対策事業 | 危機管理部 | 263,022 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 感震ブレーカー設置促進事業 | 危機管理部 | 6,000 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 支え愛地域連携推進事業 | 危機管理部 | 6,929 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 鳥取県防災・危機管理対策交付金事業 | 危機管理部 | 68,500 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 消防団等支援・連絡調整事業 | 危機管理部 | 19,951 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 消防学校費 | 危機管理部 | 60,989 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 災害時における福祉支援機能強化事業 | 福祉保健部 | 33,535 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 災害派遣医療チーム体制整備事業 | 福祉保健部 | 26,455 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 原子力災害医療体制整備事業（安定ヨウ素剤関係） | 福祉保健部 | 6,131 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 自然公園災害復旧事業 | 生活環境部 | 100,000 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 災害廃棄物処理円滑化推進事業 | 生活環境部 | 5,500 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 大規模地震に備えた住宅耐震化促進強化事業 | 生活環境部 | 148,101 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| ため池安全総合対策強化事業 | 農林水産部 | 91,670 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 県営地域ため池総合整備事業 | 農林水産部 | 305,500 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| デジタル技術を活用した災害対応力強化事業 | 県土整備部 | 27,977 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 防災・安全交付金（災害防除） | 県土整備部 | 259,000 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 防災・安全交付金（国道改築） | 県土整備部 | 289,000 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 河川調査費 | 県土整備部 | 73,888 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 河川安全・安心対策推進事業（改修） | 県土整備部 | 323,800 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 防災・安全交付金（河川改修） | 県土整備部 | 949,800 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 大規模特定河川事業 | 県土整備部 | 829,500 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 河川災害関連事業 | 県土整備部 | 72,000 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 防災・安全交付金（通常砂防事業） | 県土整備部 | 1,108,200 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 治山事業（県土） | 県土整備部 | 484,000 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 防災・安全交付金（急傾斜地崩壊対策事業） | 県土整備部 | 671,800 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+| 砂防メンテナンス事業 | 県土整備部 | 701,203 | 当初 | 未確認 | https://note.com/zuikaku_ozawa_/n/n6dd68f4af447 | 2025年2月 |
+
+note記事が「暮らし安心のふるさと創造」災害激甚化対策セクションの合計として記載した金額: **7,881,647千円**。ただしこの合計がどの事業範囲に対応するかは、原資料PDF（https://www.pref.tottori.lg.jp/secure/1381609/R7tousyosyuyouzigyou.pdf）の確認が必要。
+
+---
+
+### 令和7年度補正予算第1号
+
+出典ページ: https://www.pref.tottori.lg.jp/321691.htm  
+PDF（概要）: https://www.pref.tottori.lg.jp/secure/1383172/R7.2yosangaiyoutuika.pdf  
+PDF（主な事業説明資料）: https://www.pref.tottori.lg.jp/secure/1383172/R7.2tuikaomonajigyou.pdf  
+PDFはいずれもバイナリ形式のため直接読取不可。
+
+ページ本文（HTML）の記述によれば、補正第1号の主な内容は以下のとおりであり、防災関連事業の明記はない:
+- 「高等学校等就学支援金制度の対象外であった者への授業料補助」の拡充
+- 「高校生等がいる低所得者世帯を対象とする奨学給付金」の拡充
+
+| 事業名 | 所管部局 | 金額（千円） | 当初/補正 | 前年比・増減 | 出典URL | 資料発行日 |
+|--------|---------|-------------|-----------|-------------|---------|------------|
+| 防災関連事業の記載なし（HTMLから確認できる範囲） | — | — | 補正第1号 | — | https://www.pref.tottori.lg.jp/321691.htm | 2025年（令和7年）6月頃 |
+
+---
+
+### 令和7年度 その他補正予算（6月・9月・12月・2月）
+
+各補正予算ページについて、HTMLから確認できる防災関連事業・金額はなし。PDFは未取得。
+
+| 補正回 | ページURL | 状況 |
+|-------|---------|------|
+| 6月補正予算 | https://www.pref.tottori.lg.jp/319953.htm | HTMLに防災関連事業記載なし。PDFリンク未確認。 |
+| 9月補正予算 | https://www.pref.tottori.lg.jp/319946.htm | HTMLに防災関連事業記載なし。資料はデータベースへのリンクのみ（PDF公開予定日程の記載あり）。 |
+| 12月補正予算 | https://www.pref.tottori.lg.jp/319941.htm | HTMLに防災関連事業記載なし。資料ページリンクあり（詳細未取得）。 |
+| 2月補正予算 | https://www.pref.tottori.lg.jp/326766.htm | HTMLに防災関連事業記載なし。概要PDF未取得。 |
+
+---
+
+### 令和6年度当初予算
+
+令和6年度当初予算の資料掲載ページ: https://www.pref.tottori.lg.jp/313023.htm （資料発行日: 令和6年2月）  
+PDFリンク:
+- 令和６年度当初予算案の概要・分析: https://www.pref.tottori.lg.jp/secure/1334788/01tousyoyosannnogaiyoubunseki.pdf
+- 令和６年度当初予算案主要事業一覧: https://www.pref.tottori.lg.jp/secure/1334788/02tousyoyosannosyuyoujigyou.pdf
+- 令和６年度予算の説明: https://www.pref.tottori.lg.jp/secure/1334785/R6yosannosetumei.pdf
+
+上記PDFはいずれもバイナリ形式のため直接読取不可。令和6年度の防災関連事業・金額は取得できなかった。
+
+| 事業名 | 所管部局 | 金額（千円） | 当初/補正 | 前年比・増減 | 出典URL | 資料発行日 |
+|--------|---------|-------------|-----------|-------------|---------|------------|
+| 取得不可（原資料PDFが読取不可） | — | 取得不可 | 当初 | — | https://www.pref.tottori.lg.jp/313023.htm | 2024年2月 |
+
+---
 
 ## 見つからなかった/確認できなかった項目
 
-- 令和7年度当初予算の防災関連事業名・金額（全項目）: **取得不可**。実資料（PDF・予算公開DB）に到達できなかったため。
-- 令和6年度当初予算の防災関連費目（推移把握用）: **取得不可**。同上。
-- 直近の補正予算の防災関連費目: **取得不可**。同上。
-- 一般会計の予算規模・歳出区分（防災・安全安心関係）: **取得不可**。検索スニペットにも具体的金額の記載なし。
-- 個別分野（国土強靱化／治水・河川・浸水対策／土砂災害／耐震化／避難所／ハザードマップ／防災情報システム／防災行政無線／備蓄／消防・救急／消防団／自主防災組織／防災教育・訓練）の予算額: いずれも **取得不可**。
+- **令和7年度当初予算の款・項・目の体系的記載**: 原資料PDFが読取不可のため未確認。noteの転載記事から部局・事業名・金額は取得したが、予算科目（款・項・目）は不明。
+- **全防災費目の前年比・増減**: 原資料PDFが読取不可のため未確認。
+- **令和6年度当初予算の防災関連事業・金額一覧**: 原資料PDFが読取不可。ウェブ検索でも個別の事業金額は取得できなかった。前年比比較のための令和6年度データは取得不可。
+- **令和7年度各補正予算の防災関連事業・金額**: 各補正予算PDFはバイナリ形式のため読取不可。HTMLページには事業詳細なし。
+- **消防費の内訳（消防学校費以外）**: 確認できていない。
+- **令和7年度当初予算の全庁防災費合計・款別合計**: 予算概要PDFが読取不可のため未確認。
+- **ハザードマップ更新、防災行政無線、備蓄・物資関連事業**: 上記note記事の転載範囲に含まれておらず、原資料PDF未確認のため取得不可。
+- **自主防災組織、防災教育・訓練関連事業**: 同上。
+
+---
 
 ## メモ（事実のみ）
 
-- 取得不可の原因（事実）: 鳥取県の公式ドメインへのアクセスがこの実行環境からすべて失敗した。
-  - `https://www.pref.tottori.lg.jp/`（とりネット）配下の各ページは、WebFetch・curl いずれも HTTP 403 Forbidden を返した。
-  - `https://db.pref.tottori.jp/`（予算公開データベース等）も WebFetch で HTTP 403、curl はネットワーク許可リスト外で接続不可。
-  - `https://www.city.tottori.lg.jp/`（鳥取市）も HTTP 403。
-  - そのため、起点として指定された下記URLの本文・PDFは一切取得できなかった。
-
-- WebSearch（検索エンジン）で実在が確認できた、鳥取県の予算関連の公式URL一覧（本文は未取得・リンクのみ）:
-  - 令和7年度当初予算: https://www.pref.tottori.lg.jp/321465.htm
-  - 当初予算（総合インデックス）: https://www.pref.tottori.lg.jp/299726.htm
-  - 当初予算（一般事業段階）: https://www.pref.tottori.lg.jp/326565.htm
-  - 当初予算（政策戦略事業要求状況）: https://www.pref.tottori.lg.jp/299728.htm
-  - 当初予算（一般事業段階要求状況）: https://www.pref.tottori.lg.jp/280653.htm
-  - 財政課: https://www.pref.tottori.lg.jp/zaiseika/
-  - 予算状況: https://www.pref.tottori.lg.jp/17931.htm
-  - 令和6年度当初予算: https://www.pref.tottori.lg.jp/313023.htm
-  - 令和7年度予算公開データベース: https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/index.htm
-  - 予算編成過程の公開／報道提供資料: http://db.pref.tottori.jp/pressrelease.nsf/webview/BFC92F3B6D10EF5849258D6B002A3E1F?OpenDocument=
-  - 鳥取県地域防災計画（資料編）: https://www.pref.tottori.lg.jp/296160.htm
-  - 国土強靱化地域計画: https://www.pref.tottori.lg.jp/243155.htm
-
-- 参考（鳥取県以外の関連公式URL、本文は未取得・リンクのみ）:
-  - 令和7年度 国土強靱化関係予算案の概要（内閣官房）: https://www.cas.go.jp/jp/seisaku/kokudo_kyoujinka/pdf/r07kankeiyosan.pdf
-  - 総務省消防庁 地域防災計画データベース（鳥取）: https://www.fdma.go.jp/bousaikeikaku/chugoku/tottori/
-
-- 検索スニペットに現れた一般的記述（鳥取県固有の予算額ではない・全国の地方財政計画に関する文脈）:
-  - 令和7年度は「自然災害への対応力強化」が求められている旨の記述が検索結果に現れたが、鳥取県の具体的な防災予算額は検索スニペットには含まれていなかった。これは事業・金額の出典として利用できる情報ではない。
-
-- 次アクションの提案（事実ベース・実行は別担当）: 当該ドメインへアクセス可能なネットワーク環境、または許可リストに当該ホストを追加した環境で再収集すること。上記URLが正しい起点となる。
+- 令和7年度当初予算の資料掲載ページ: https://www.pref.tottori.lg.jp/321465.htm
+- 同ページに掲載されるPDF（令和7年2月公表）:
+  - 令和７年度当初予算案の概要・分析: https://www.pref.tottori.lg.jp/secure/1381609/R7tousyogaiyoubunseki01.pdf
+  - 令和７年度当初予算案主要事業一覧: https://www.pref.tottori.lg.jp/secure/1381609/R7tousyosyuyouzigyou.pdf （主要事業18ページ、Excelから変換、2025年2月20日作成と推測）
+  - 令和７年２月定例県議会付議案: https://www.pref.tottori.lg.jp/secure/1381609/R7hugianitiran.pdf
+  - 令和７年度予算の説明: https://www.pref.tottori.lg.jp/secure/1381607/R7yosannosetumei.pdf
+- 令和7年度予算事業検索データベース（公開版）: https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/index.htm
+- 令和6年度予算事業検索データベース（公開版）: http://db.pref.tottori.jp/yosan/R6Yosan_Koukai.nsf/index.htm
+- 財政課トップ: https://www.pref.tottori.lg.jp/zaiseika/
+- 令和7年度各補正予算一覧ページ: https://www.pref.tottori.lg.jp/319935.htm
+- 令和8年度6月補正予算概要は財政課トップ（2026-06-01公表）に掲載されていることを確認: https://www.pref.tottori.lg.jp/zaiseika/
+- 今回抽出した令和7年度当初予算の防災関連事業データはnote民間記事の転記であり、原資料PDFとの照合が必要。
