@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Write(workspace/**)",
+      "Read(workspace/**)",
+      "WebSearch(*)",
+      "WebFetch(*)"
+    ]
+  }
+}
