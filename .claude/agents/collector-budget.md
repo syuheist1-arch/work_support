@@ -21,11 +21,33 @@ model: sonnet
 2. 自治体の財政課・予算ページ、予算書PDF、予算概要、主要事業説明資料を WebFetch で取得
 3. 防災関連の費目・事業を抽出
 
-### STEP 2: 予算事業データベース（細目レベルの確認）
-- 都道府県・政令市では予算公開データベースを運営していることがある。
-  「<自治体名> 予算 データベース 検索」で探し、防災・危機管理・通信・映像・システム等の
-  キーワードで絞り込む。
-- 個別事業の節・細目・委託先まで記録する。
+### STEP 2: 予算事業データベース（細目レベルの確認）★必ず実施
+
+都道府県・政令市では予算公開データベースを運営していることがある。
+まず「<自治体名> 予算 データベース 検索」で探す。
+
+#### 鳥取県の場合（確認済みの検索URL）
+以下の検索URLを **キーワードごとに個別に** WebFetch で取得し、ヒットした全ドキュメントリンク（OpenDocument を含むURL）を列挙する。その後、各ドキュメントURLをWebFetchで取得し、金額・電話番号・メールアドレスを記録する（日本語テキストが文字化けする場合でも数値・連絡先は読める）。
+
+- 令和8年度 映像: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E6%98%A0%E5%83%8F&SearchMax=250`
+- 令和8年度 通信: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E9%80%9A%E4%BF%A1&SearchMax=250`
+- 令和8年度 保守: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E4%BF%9D%E5%AE%88&SearchMax=250`
+- 令和8年度 防災: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E9%98%B2%E7%81%BD&SearchMax=250`
+- 令和8年度 危機管理: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E5%8D%B1%E6%A9%9F%E7%AE%A1%E7%90%86&SearchMax=250`
+- 令和8年度 システム: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0&SearchMax=250`
+- 令和8年度 カメラ: `https://db.pref.tottori.jp/yosan/R8Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E3%82%AB%E3%83%A1%E3%83%A9&SearchMax=250`
+- 令和7年度 映像: `https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E6%98%A0%E5%83%8F&SearchMax=250`
+- 令和7年度 通信: `https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E9%80%9A%E4%BF%A1&SearchMax=250`
+- 令和7年度 保守: `https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E4%BF%9D%E5%AE%88&SearchMax=250`
+- 令和7年度 防災: `https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E9%98%B2%E7%81%BD&SearchMax=250`
+- 令和7年度 危機管理: `https://db.pref.tottori.jp/yosan/R7Yosan_Koukai.nsf/72079a474c40091b4925747f002bb433?SearchView&Query=%E5%8D%B1%E6%A9%9F%E7%AE%A1%E7%90%86&SearchMax=250`
+
+各個別ドキュメントURL（`OpenDocument&Highlight=...` 形式）を WebFetch で取得し、以下を記録する:
+- 金額（数値部分は文字化けしない）
+- 電話番号・メールアドレス（担当課の特定に使う）
+- 読み取れた事業名・部局名
+
+文字化けで読めない項目は「文字化けにより不読」と記録し、出典URLは必ず残す。
 
 ### STEP 3: 入札公告・調達情報（新規構築・更新・設計案件）
 以下のキーワードで WebSearch し、入札公告ポータルを WebFetch で取得する。
