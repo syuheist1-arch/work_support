@@ -29,6 +29,25 @@
 
 成果物は `workspace/<自治体名>/` に保存される。
 
+### ダッシュボード（GitHub Pages）
+
+`workspace/` 配下の全自治体レポートを横断閲覧できる静的ダッシュボードを提供。
+
+```bash
+python tools/build_dashboard.py
+# → docs/index.html を再生成
+```
+
+**GitHub Pages の有効化手順:**
+
+1. リポジトリの **Settings → Pages** を開く。
+2. **Source** を `Deploy from a branch` に設定。
+3. **Branch** を `claude/blissful-planck-lsvFa`（または main にマージ後は `main`）、フォルダを `/docs` に設定して Save。
+4. 数分後に表示される URL でアクセス可能になる。
+
+> 新しい自治体のレポートを追加したら `python tools/build_dashboard.py` を実行して
+> `docs/index.html` をコミット・プッシュすることでダッシュボードが更新される。
+
 ### ロードマップ
 
 - フェーズ2: 入札公告クローラー・入札過去実績・入札傾向分析を追加
