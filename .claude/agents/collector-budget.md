@@ -21,6 +21,29 @@ model: sonnet
 2. 自治体の財政課・予算ページ、予算書PDF、予算概要、主要事業説明資料を WebFetch で取得
 3. 防災関連の費目・事業を抽出
 
+**【PDF取得・テキスト抽出の優先手順】**
+
+WebFetchはPDFのバイナリを処理できず「corrupted/encoded」と返すことがある。その場合は以下を試みること:
+
+1. **まずWebFetchで取得を試みる** — HTMLに変換されるページはこれで十分
+2. **WebFetchで取得できないPDFは `curl` + PyMuPDF で抽出**（Bashが利用可能な場合）:
+   ```bash
+   curl -sL "<PDF_URL>" -o /tmp/target.pdf
+   python3 -c "
+   import fitz
+   doc = fitz.open('/tmp/target.pdf')
+   print(f'Pages: {len(doc)}')
+   for i, page in enumerate(doc):
+       text = page.get_text()
+       if text.strip():
+           print(f'=== page {i+1} ===')
+           print(text)
+   "
+   ```
+   PyMuPDF（fitz）はこの環境にインストール済み（`pip install pymupdf` で追加可能）。
+3. **スキャン画像型PDFの場合**（テキスト抽出してもページが空/テキスト0文字）: OCRは使用不可のため「スキャン画像型PDFのためテキスト抽出不可」と記録し、広報誌・議会だより等の代替資料を探す。
+4. **HTTP 403/404の場合**: そのまま「取得不可（HTTP XXX）」と記録して次の資料へ。
+
 ### STEP 2: 予算事業データベース（細目レベルの確認）★必ず実施
 
 都道府県・政令市では予算公開データベースを運営していることがある。
