@@ -180,180 +180,125 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   --red: #f76262;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-}
+body { font-family: 'Hiragino Sans', 'Yu Gothic', sans-serif; background: var(--bg); color: var(--text); }
 header {
-  padding: 1.2rem 1.5rem;
+  padding: 1rem 1.5rem;
   background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
   border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
 }
-header h1 { font-size: 1.2rem; font-weight: 700; letter-spacing: .03em; }
-header .badge {
-  font-size: .7rem;
-  background: var(--accent2);
-  padding: .2em .7em;
-  border-radius: 99px;
-  color: #fff;
-}
-header .built-at { font-size: .72rem; color: var(--text-muted); margin-left: auto; }
+header h1 { font-size: 1.1rem; font-weight: 700; }
+header .badge { font-size: .68rem; background: var(--accent2); padding: .2em .7em; border-radius: 99px; color: #fff; }
+header .built-at { font-size: .7rem; color: var(--text-muted); margin-left: auto; }
 
-.main-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
+.page { max-width: 1600px; margin: 0 auto; padding: 1.2rem 1.5rem; display: flex; flex-direction: column; gap: 1.2rem; }
+
+/* ── section title ── */
+.section-title { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .6rem; }
 
 /* ── Cards ── */
-.section-title {
-  font-size: .8rem;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: .8rem;
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
-}
+.cards { display: flex; gap: .8rem; flex-wrap: wrap; }
 .card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1rem;
-  cursor: pointer;
-  transition: border-color .15s, transform .1s;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: .85rem 1rem; cursor: pointer; transition: border-color .15s, transform .1s;
+  min-width: 200px; flex: 1 1 200px; max-width: 280px;
 }
 .card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.card.active { border-color: var(--accent); background: var(--surface2); }
-.card-name { font-size: 1.1rem; font-weight: 700; margin-bottom: .3rem; }
-.card-date { font-size: .72rem; color: var(--text-muted); margin-bottom: .6rem; }
+.card.active { border-color: var(--accent); background: var(--surface2); box-shadow: 0 0 0 1px var(--accent); }
+.card-name { font-size: 1rem; font-weight: 700; margin-bottom: .2rem; }
+.card-date { font-size: .68rem; color: var(--text-muted); margin-bottom: .4rem; }
+.status-badges { display: flex; gap: .3rem; flex-wrap: wrap; margin-bottom: .4rem; }
+.badge-status { font-size: .62rem; padding: .12em .55em; border-radius: 99px; font-weight: 600; white-space: nowrap; }
+.badge-announced { background: color-mix(in srgb,var(--green) 18%,transparent); color: var(--green); border: 1px solid var(--green); }
+.badge-budgeted  { background: color-mix(in srgb,var(--yellow) 18%,transparent); color: var(--yellow); border: 1px solid var(--yellow); }
+.badge-pipeline  { background: color-mix(in srgb,var(--text-muted) 15%,transparent); color: var(--text-muted); border: 1px solid var(--text-muted); }
 .card-attacks { list-style: none; }
-.card-attacks li {
-  font-size: .78rem;
-  padding: .18rem 0;
-  color: var(--text);
-  display: flex;
-  gap: .4rem;
-}
+.card-attacks li { font-size: .73rem; padding: .12rem 0; display: flex; gap: .35rem; }
 .card-attacks li::before { content: "▸"; color: var(--accent); flex-shrink: 0; }
-.status-badges { display: flex; gap: .4rem; flex-wrap: wrap; margin: .5rem 0 .4rem; }
-.badge-status {
-  font-size: .65rem;
-  padding: .15em .6em;
-  border-radius: 99px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-.badge-announced { background: color-mix(in srgb, var(--green) 20%, transparent); color: var(--green); border: 1px solid var(--green); }
-.badge-budgeted  { background: color-mix(in srgb, var(--yellow) 20%, transparent); color: var(--yellow); border: 1px solid var(--yellow); }
-.badge-pipeline  { background: color-mix(in srgb, var(--text-muted) 20%, transparent); color: var(--text-muted); border: 1px solid var(--text-muted); }
 
-/* ── Table ── */
+/* ── Compare table ── */
 .table-wrap { overflow-x: auto; }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: .8rem;
-}
-th {
-  background: var(--surface2);
-  padding: .6rem .8rem;
-  text-align: left;
-  font-weight: 600;
-  color: var(--text-muted);
-  border-bottom: 1px solid var(--border);
-  white-space: nowrap;
-}
-td {
-  padding: .55rem .8rem;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-  line-height: 1.5;
-}
+table { width: 100%; border-collapse: collapse; font-size: .78rem; }
+th { background: var(--surface2); padding: .55rem .75rem; text-align: left; font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); white-space: nowrap; }
+td { padding: .5rem .75rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
 tr:hover td { background: var(--surface2); }
-tr.active-row td { background: color-mix(in srgb, var(--accent) 10%, transparent); }
-.muni-link {
-  color: var(--accent);
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 600;
-}
+tr.active-row td { background: color-mix(in srgb,var(--accent) 10%,transparent); }
+.muni-link { color: var(--accent); cursor: pointer; font-weight: 600; }
 .muni-link:hover { text-decoration: underline; }
 
 /* ── Detail panel ── */
 #detail-panel {
   display: none;
+  border: 1px solid var(--accent);
+  border-radius: 12px;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.5rem;
+  overflow: hidden;
 }
 #detail-panel.visible { display: block; }
-#detail-panel h2 {
-  font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: .6rem;
-}
-/* marked.js 出力スタイル */
-#detail-content h1,#detail-content h2,#detail-content h3 {
-  margin: 1.2em 0 .4em;
-  line-height: 1.3;
-}
-#detail-content h1 { font-size: 1.3rem; }
-#detail-content h2 { font-size: 1.1rem; border-bottom: 1px solid var(--border); padding-bottom: .3rem; }
-#detail-content h3 { font-size: .95rem; color: var(--accent); }
-#detail-content p { margin: .5em 0; line-height: 1.8; font-size: .88rem; }
-#detail-content ul,#detail-content ol { padding-left: 1.4em; margin: .5em 0; font-size: .88rem; line-height: 1.8; }
-#detail-content table { margin: .8em 0; }
-#detail-content th { font-size: .78rem; }
-#detail-content td { font-size: .78rem; }
-#detail-content a { color: var(--accent); }
-#detail-content strong { color: var(--yellow); }
-#detail-content code {
+
+/* header bar */
+.dp-header {
+  display: flex; align-items: center; gap: .8rem; flex-wrap: wrap;
+  padding: .8rem 1.2rem;
   background: var(--surface2);
-  padding: .1em .4em;
-  border-radius: 4px;
-  font-size: .85em;
+  border-bottom: 1px solid var(--border);
 }
+.dp-title { font-size: 1rem; font-weight: 700; }
+.dp-meta { font-size: .72rem; color: var(--text-muted); }
 #detail-close {
-  float: right;
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  padding: .3rem .8rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: .8rem;
+  margin-left: auto; background: none; border: 1px solid var(--border);
+  color: var(--text-muted); padding: .25rem .7rem; border-radius: 6px;
+  cursor: pointer; font-size: .75rem;
 }
 #detail-close:hover { border-color: var(--accent); color: var(--text); }
 
-@media (min-width: 1024px) {
-  .main-layout {
-    grid-template-columns: 1fr 420px;
-    grid-template-rows: auto auto 1fr;
-  }
-  .cards-section { grid-column: 1 / 2; }
-  .table-section { grid-column: 1 / 2; }
-  #detail-panel { grid-column: 2; grid-row: 1 / 4; display: block; position: sticky; top: 1rem; max-height: 90vh; overflow-y: auto; }
-  #detail-panel:not(.visible) #detail-content { display: none; }
-  #detail-panel:not(.visible)::after { content: "← 自治体を選ぶとレポートを表示"; display: block; color: var(--text-muted); font-size: .88rem; text-align: center; padding: 2rem; }
-  #detail-close { display: none; }
+/* section grid — 3 columns on wide screens */
+.dp-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
 }
+@media (min-width: 900px)  { .dp-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1280px) { .dp-grid { grid-template-columns: 2fr 1fr 1fr; } }
+
+.dp-section {
+  padding: 1rem 1.2rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.dp-section:last-child { border-right: none; }
+.dp-section-title {
+  font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: .6rem;
+}
+
+/* rendered markdown inside sections */
+.dp-body p { font-size: .82rem; line-height: 1.75; margin: .35em 0; }
+.dp-body ul, .dp-body ol { padding-left: 1.3em; font-size: .82rem; line-height: 1.75; margin: .35em 0; }
+.dp-body li { margin: .15em 0; }
+.dp-body strong { color: var(--yellow); }
+.dp-body a { color: var(--accent); word-break: break-all; }
+.dp-body code { background: var(--surface2); padding: .1em .35em; border-radius: 3px; font-size: .8em; }
+/* tables in detail */
+.dp-body .tbl-wrap { overflow-x: auto; margin: .5em 0; }
+.dp-body table { width: 100%; border-collapse: collapse; font-size: .75rem; white-space: nowrap; }
+.dp-body th { background: var(--surface2); padding: .4rem .6rem; font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+.dp-body td { padding: .38rem .6rem; border-bottom: 1px solid var(--border); vertical-align: top; white-space: normal; }
+.dp-body td:first-child { white-space: nowrap; }
+/* confirmed/budgeted/pipeline color in table cells */
+.dp-body td:first-child { font-weight: 600; }
+
+/* summary bullets */
+.summary-list { list-style: none; padding: 0; }
+.summary-list li {
+  font-size: .82rem; line-height: 1.7;
+  padding: .3rem 0 .3rem .9rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.summary-list li:last-child { border-bottom: none; }
+.summary-list li::before { content: "●"; color: var(--accent); position: absolute; left: 0; font-size: .55rem; top: .55rem; }
 </style>
 </head>
 <body>
@@ -363,58 +308,117 @@ tr.active-row td { background: color-mix(in srgb, var(--accent) 10%, transparent
   <span class="built-at">生成: __BUILT_AT__</span>
 </header>
 
-<div class="main-layout">
+<div class="page">
   <!-- カード一覧 -->
-  <section class="cards-section">
-    <div class="section-title">自治体一覧 (__COUNT__ 件)</div>
+  <section>
+    <div class="section-title" id="cards-title">自治体一覧 (__COUNT__ 件)</div>
     <div class="cards" id="cards"></div>
   </section>
 
   <!-- 比較表 -->
-  <section class="table-section">
-    <div class="section-title">横断比較表</div>
+  <section>
+    <div class="section-title">横断比較</div>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr>
-            <th>自治体</th>
-            <th>案件ステータス</th>
-            <th>攻めどころ Top</th>
-            <th>想定キーパーソン</th>
-            <th>更新日</th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th>自治体</th><th>ステータス</th><th>攻めどころ Top</th>
+          <th>想定キーパーソン</th><th>更新日</th>
+        </tr></thead>
         <tbody id="table-body"></tbody>
       </table>
     </div>
   </section>
 
-  <!-- 詳細パネル -->
+  <!-- 詳細パネル（フル幅・横並びグリッド） -->
   <div id="detail-panel">
-    <h2 id="detail-title">レポート</h2>
-    <button id="detail-close" onclick="closeDetail()">✕ 閉じる</button>
-    <div id="detail-content"></div>
+    <div class="dp-header">
+      <span class="dp-title" id="dp-title">-</span>
+      <span class="dp-meta" id="dp-meta"></span>
+      <button id="detail-close" onclick="closeDetail()">✕ 閉じる</button>
+    </div>
+    <div class="dp-grid" id="dp-grid"></div>
   </div>
 </div>
 
 <script>
 const DATA = __DATA_JSON__;
 
+/* Section order for detail panel: label → regex that matches the ## heading */
+const SECTIONS = [
+  { key: 'summary',   label: 'エグゼクティブサマリー', re: /エグゼクティブ|サマリ/ },
+  { key: 'attacks',   label: '攻めどころ',             re: /攻めどころ/ },
+  { key: 'budget',    label: '防災予算',               re: /防災予算/ },
+  { key: 'minutes',   label: '議会・首長の関心',        re: /議会|首長/ },
+  { key: 'actions',   label: '次アクション',            re: /次アクション/ },
+  { key: 'issues',    label: '要確認事項',              re: /要確認/ },
+];
+
+function parseSections(markdown) {
+  const result = {};
+  const lines = markdown.split('\n');
+  let cur = null;
+  for (const line of lines) {
+    if (line.startsWith('## ')) {
+      const heading = line.slice(3).trim();
+      cur = null;
+      for (const s of SECTIONS) {
+        if (s.re.test(heading)) { cur = s.key; result[cur] = result[cur] || []; break; }
+      }
+    } else if (cur) {
+      result[cur].push(line);
+    }
+  }
+  // trim leading/trailing blank lines
+  for (const k of Object.keys(result)) {
+    while (result[k].length && !result[k][0].trim()) result[k].shift();
+    while (result[k].length && !result[k][result[k].length-1].trim()) result[k].pop();
+  }
+  return result;
+}
+
+function renderSection(lines) {
+  const md = lines.join('\n');
+  let html = marked.parse(md);
+  // wrap tables in scrollable div
+  html = html.replace(/<table>/g, '<div class="tbl-wrap"><table>').replace(/<\/table>/g, '</table></div>');
+  return `<div class="dp-body">${html}</div>`;
+}
+
+function badgesHtml(s, size) {
+  return [
+    s['公告済み'] > 0       ? `<span class="badge-status badge-announced">公告済み ${s['公告済み']}件</span>` : '',
+    s['予算化・未公告'] > 0  ? `<span class="badge-status badge-budgeted">予算化・未公告 ${s['予算化・未公告']}件</span>` : '',
+    s['仕込み'] > 0          ? `<span class="badge-status badge-pipeline">仕込み ${s['仕込み']}件</span>` : '',
+  ].filter(Boolean).join('');
+}
+
 function showDetail(idx) {
   const d = DATA[idx];
-  document.getElementById('detail-title').textContent = d.name + ' / ' + d.source;
-  document.getElementById('detail-content').innerHTML = marked.parse(d.markdown);
+  document.getElementById('dp-title').textContent = d.name + ' / 防災';
+  document.getElementById('dp-meta').textContent = '更新: ' + d.date;
+
+  const sections = parseSections(d.markdown);
+  const grid = document.getElementById('dp-grid');
+  grid.innerHTML = '';
+
+  for (const s of SECTIONS) {
+    if (!sections[s.key] || !sections[s.key].length) continue;
+    const div = document.createElement('div');
+    div.className = 'dp-section';
+    div.innerHTML = `<div class="dp-section-title">${s.label}</div>${renderSection(sections[s.key])}`;
+    grid.appendChild(div);
+  }
+
   const panel = document.getElementById('detail-panel');
   panel.classList.add('visible');
-  // card highlight
   document.querySelectorAll('.card').forEach((c, i) => c.classList.toggle('active', i === idx));
   document.querySelectorAll('#table-body tr').forEach((r, i) => r.classList.toggle('active-row', i === idx));
-  // mobile scroll
-  if (window.innerWidth < 1024) panel.scrollIntoView({ behavior: 'smooth' });
+  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function closeDetail() {
   document.getElementById('detail-panel').classList.remove('visible');
+  document.getElementById('dp-grid').innerHTML = '';
   document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('#table-body tr').forEach(r => r.classList.remove('active-row'));
 }
@@ -424,47 +428,36 @@ function buildCards() {
   DATA.forEach((d, i) => {
     const el = document.createElement('div');
     el.className = 'card';
-    const s = d.status || {};
-    const badges = [
-      s['公告済み'] > 0 ? `<span class="badge-status badge-announced">公告済み ${s['公告済み']}件</span>` : '',
-      s['予算化・未公告'] > 0 ? `<span class="badge-status badge-budgeted">予算化・未公告 ${s['予算化・未公告']}件</span>` : '',
-      s['仕込み'] > 0 ? `<span class="badge-status badge-pipeline">仕込み ${s['仕込み']}件</span>` : '',
-    ].filter(Boolean).join('');
     el.innerHTML = `
       <div class="card-name">${d.name}</div>
-      <div class="card-date">更新: ${d.date} &nbsp;|&nbsp; ${d.source}</div>
-      <div class="status-badges">${badges}</div>
-      <ul class="card-attacks">${d.attacks.map(a => `<li>${a}</li>`).join('')}</ul>
-    `;
+      <div class="card-date">更新: ${d.date}</div>
+      <div class="status-badges">${badgesHtml(d.status || {})}</div>
+      <ul class="card-attacks">${d.attacks.map(a => `<li>${a}</li>`).join('')}</ul>`;
     el.addEventListener('click', () => showDetail(i));
     wrap.appendChild(el);
   });
+  document.getElementById('cards-title').textContent = `自治体一覧 (${DATA.length} 件)`;
 }
 
 function buildTable() {
   const tbody = document.getElementById('table-body');
   DATA.forEach((d, i) => {
-    const tr = document.createElement('tr');
-    const s2 = d.status || {};
-    const badges2 = [
-      s2['公告済み'] > 0 ? `<span class="badge-status badge-announced">公告済み ${s2['公告済み']}</span>` : '',
-      s2['予算化・未公告'] > 0 ? `<span class="badge-status badge-budgeted">予算化 ${s2['予算化・未公告']}</span>` : '',
-      s2['仕込み'] > 0 ? `<span class="badge-status badge-pipeline">仕込み ${s2['仕込み']}</span>` : '',
+    const s = d.status || {};
+    const b = [
+      s['公告済み'] > 0      ? `<span class="badge-status badge-announced">公告済み ${s['公告済み']}</span>` : '',
+      s['予算化・未公告'] > 0 ? `<span class="badge-status badge-budgeted">予算化 ${s['予算化・未公告']}</span>` : '',
+      s['仕込み'] > 0         ? `<span class="badge-status badge-pipeline">仕込み ${s['仕込み']}</span>` : '',
     ].filter(Boolean).join(' ');
+    const tr = document.createElement('tr');
     tr.innerHTML = `
       <td><a class="muni-link" onclick="showDetail(${i})">${d.name}</a></td>
-      <td style="white-space:nowrap">${badges2 || '-'}</td>
+      <td style="white-space:nowrap">${b || '-'}</td>
       <td>${d.top_attack}</td>
       <td>${d.keypersons}</td>
-      <td style="white-space:nowrap">${d.date}</td>
-    `;
+      <td style="white-space:nowrap">${d.date}</td>`;
     tbody.appendChild(tr);
   });
 }
-
-document.getElementById('cards').closest('.cards-section')
-  .querySelector('.section-title').textContent =
-  `自治体一覧 (${DATA.length} 件)`;
 
 buildCards();
 buildTable();
