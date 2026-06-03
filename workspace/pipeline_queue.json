@@ -361,16 +361,10 @@
       "name": "飯南町",
       "prefecture": "島根県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": ["C_minutes", "E_analysis", "F_needs"],
+      "note": "消防車両2台20,565千円・ハザードマップ新規2,660千円・防災無線バッテリー交換新規4,112千円"
     },
     {
       "name": "川本町",
