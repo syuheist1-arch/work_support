@@ -244,11 +244,16 @@ header .built-at { font-size: .7rem; color: var(--text-muted); margin-left: auto
 /* 防災行政無線 予算化強調 */
 .card.musen-alert {
   border-color: var(--yellow);
+  background: color-mix(in srgb,var(--yellow) 10%,var(--surface));
   box-shadow: 0 0 0 1px color-mix(in srgb,var(--yellow) 40%,transparent),
-              0 0 8px color-mix(in srgb,var(--yellow) 20%,transparent);
+              0 0 10px color-mix(in srgb,var(--yellow) 15%,transparent);
 }
 .card.musen-alert .card-name { color: var(--yellow); }
-.card.musen-alert:hover { border-color: var(--yellow); transform: translateY(-2px); }
+.card.musen-alert:hover {
+  border-color: var(--yellow);
+  background: color-mix(in srgb,var(--yellow) 16%,var(--surface));
+  transform: translateY(-2px);
+}
 .card-name { font-size: .9rem; font-weight: 700; }
 .card-date { font-size: .65rem; color: var(--text-muted); }
 .card-musen-tag {
