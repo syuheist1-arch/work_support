@@ -258,16 +258,13 @@
       "name": "松江市",
       "prefecture": "島根県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "消防車両整備2.7億円・消防救急デジタル無線1,200万円・避難所空調整備1億854万円"
     },
     {
       "name": "浜田市",
