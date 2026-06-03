@@ -1,5 +1,31 @@
 # プロジェクト運用ルール
 
+## セッション開始時の自動処理（キュー駆動）
+
+**ユーザーが「次の自治体を処理して」「キューを進めて」と言ったとき、または新しいセッションで調査継続を求められたとき**は、以下を実行すること:
+
+1. `python tools/queue_status.py` でキュー状況を確認
+2. `status: in_progress` または `status: pending` の先頭自治体の `phases_todo[0]` を実行
+3. フェーズ完了後、`workspace/pipeline_queue.json` の `phases_done` に追加、`phases_todo` から削除
+4. 全フェーズ完了したら `status: done` に更新
+5. `python tools/build_dashboard.py` → `git push` まで実行
+
+### キューへの自治体追加方法
+`workspace/pipeline_queue.json` の `municipalities` 配列に以下を追加する:
+```json
+{
+  "name": "〇〇市",
+  "prefecture": "〇〇県",
+  "theme": "防災",
+  "status": "pending",
+  "phases_done": [],
+  "phases_todo": ["B_budget", "C_minutes", "E_analysis", "F_needs", "G_report"],
+  "note": ""
+}
+```
+
+---
+
 ## 調査後の必須処理
 
 ### 予算調査（フェーズB）を実行したとき

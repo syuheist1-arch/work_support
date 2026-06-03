@@ -1,0 +1,49 @@
+{
+  "description": "調査パイプライン キュー。statusをpendingにすると次回セッションで自動処理される。",
+  "municipalities": [
+    {
+      "name": "大田市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "in_progress",
+      "phases_done": ["B_budget"],
+      "phases_todo": ["E_analysis", "G_report"],
+      "note": "budget_raw.md収集中（エージェント実行中）"
+    },
+    {
+      "name": "松江市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": ["B_budget", "C_minutes", "E_analysis", "F_needs", "G_report"],
+      "note": ""
+    },
+    {
+      "name": "出雲市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": ["B_budget", "C_minutes", "E_analysis", "F_needs", "G_report"],
+      "note": ""
+    },
+    {
+      "name": "浜田市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": ["B_budget", "C_minutes", "E_analysis", "F_needs", "G_report"],
+      "note": ""
+    }
+  ],
+  "phases": {
+    "B_budget":   "予算調査（collector-budget）",
+    "C_minutes":  "議事録調査（collector-minutes）",
+    "D_contracts":"受注実績調査（collector-budget 受注モード）",
+    "E_analysis": "予算分析（analyst-budget）",
+    "F_needs":    "ニーズ分析（analyst-needs）",
+    "G_report":   "レポート作成（qa-editor）"
+  }
+}
