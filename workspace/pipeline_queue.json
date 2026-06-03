@@ -20,7 +20,7 @@
     {"name": "南部町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み"},
     {"name": "伯耆町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み（R8予算追加済み）"},
     {"name": "日野町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "指定避難所生活環境改善40,600千円（新規）・J-ALERT整備8,400千円・橋梁補修89,100千円が主要案件"},
-    {"name": "江府町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
+    {"name": "江府町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "J-ALERT設備8,932千円（緊急防災・減災事業債）・ハザードマップ委託2,794千円・橋梁修繕56,000千円が主要案件"},
     {"name": "日南町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
 
     {"name": "松江市", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
