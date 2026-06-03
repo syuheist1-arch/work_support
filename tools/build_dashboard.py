@@ -9,11 +9,13 @@ import json
 import os
 import re
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 WORKSPACE = Path(__file__).parent.parent / "workspace"
 OUTPUT = Path(__file__).parent.parent / "docs" / "index.html"
+QUEUE = Path(__file__).parent.parent / "workspace" / "pipeline_queue.json"
+JST = timezone(timedelta(hours=9))
 
 
 def find_report(muni_dir: Path) -> tuple[str, Path]:
@@ -166,7 +168,16 @@ def extract_max_opportunity(text: str) -> str:
     return "-"
 
 
+def load_prefecture_map() -> dict[str, str]:
+    """pipeline_queue.json から {自治体名: 都道府県名} のマップを返す。"""
+    if not QUEUE.exists():
+        return {}
+    q = json.loads(QUEUE.read_text(encoding="utf-8"))
+    return {m["name"]: m["prefecture"] for m in q.get("municipalities", [])}
+
+
 def collect_municipalities() -> list[dict]:
+    pref_map = load_prefecture_map()
     munis = []
     if not WORKSPACE.exists():
         return munis
@@ -181,6 +192,7 @@ def collect_municipalities() -> list[dict]:
         status = extract_status_counts(text)
         munis.append({
             "name": d.name,
+            "prefecture": pref_map.get(d.name, ""),
             "source": source_name,
             "date": extract_date(text),
             "attacks": attacks,
@@ -231,15 +243,22 @@ header .built-at { font-size: .7rem; color: var(--text-muted); margin-left: auto
 
 .section-title { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .6rem; }
 
-/* ── Cards ── */
-.cards { display: flex; gap: .6rem; flex-wrap: wrap; }
-.card {
-  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
-  padding: .6rem .9rem; cursor: pointer; transition: border-color .15s, transform .1s;
-  min-width: 130px; flex: 0 0 auto;
-  display: flex; flex-direction: column; gap: .3rem;
+/* ── Prefecture groups ── */
+.pref-groups { display: flex; flex-direction: column; gap: 1rem; }
+.pref-group {}
+.pref-label {
+  font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--text-muted); margin-bottom: .45rem; padding-left: .1rem;
 }
-.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.cards { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+/* ── Cards (name-only chips) ── */
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+  padding: .35rem .75rem; cursor: pointer; transition: border-color .15s, background .15s;
+  white-space: nowrap;
+}
+.card:hover { border-color: var(--accent); background: var(--surface2); }
 .card.active { border-color: var(--accent); background: var(--surface2); box-shadow: 0 0 0 1px var(--accent); }
 /* 防災行政無線 予算化強調 */
 .card.musen-alert {
@@ -252,14 +271,10 @@ header .built-at { font-size: .7rem; color: var(--text-muted); margin-left: auto
 .card.musen-alert:hover {
   border-color: var(--yellow);
   background: color-mix(in srgb,var(--yellow) 16%,var(--surface));
-  transform: translateY(-2px);
 }
-.card-name { font-size: .9rem; font-weight: 700; }
-.card-date { font-size: .65rem; color: var(--text-muted); }
-.card-musen-tag {
-  font-size: .6rem; font-weight: 700; letter-spacing: .04em;
-  color: var(--yellow); display: flex; align-items: center; gap: .25rem;
-}
+.card-name { font-size: .85rem; font-weight: 700; }
+
+/* badge helpers (still used in modal/table) */
 .status-badges { display: flex; gap: .25rem; flex-wrap: wrap; }
 .badge-status { font-size: .6rem; padding: .1em .5em; border-radius: 99px; font-weight: 600; white-space: nowrap; }
 .badge-announced { background: color-mix(in srgb,var(--green) 18%,transparent); color: var(--green); border: 1px solid var(--green); }
@@ -376,7 +391,7 @@ tr.active-row td { background: color-mix(in srgb,var(--accent) 10%,transparent);
 <div class="page">
   <section>
     <div class="section-title" id="cards-title">自治体一覧 (__COUNT__ 件)</div>
-    <div class="cards" id="cards"></div>
+    <div class="pref-groups" id="pref-groups"></div>
   </section>
 
   <section>
@@ -499,7 +514,7 @@ function openModal(idx) {
   if (firstKey) switchTab(firstKey);
 
   // highlight cards / table rows
-  document.querySelectorAll('.card').forEach((c, i) => c.classList.toggle('active', i === idx));
+  document.querySelectorAll('.card').forEach(c => c.classList.toggle('active', +c.dataset.idx === idx));
   document.querySelectorAll('#table-body tr').forEach((r, i) => r.classList.toggle('active-row', i === idx));
 
   document.getElementById('modal-overlay').classList.add('open');
@@ -517,6 +532,7 @@ function closeModal() {
   document.body.style.overflow = '';
   document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('#table-body tr').forEach(r => r.classList.remove('active-row'));
+
   currentIdx = -1;
 }
 
@@ -538,22 +554,42 @@ document.addEventListener('keydown', e => {
 });
 
 function buildCards() {
-  const wrap = document.getElementById('cards');
+  // group by prefecture preserving insertion order
+  const groups = [];
+  const groupMap = {};
   DATA.forEach((d, i) => {
-    const el = document.createElement('div');
-    const musen = d.musen_alert;
-    el.className = 'card' + (musen ? ' musen-alert' : '');
-    const musenTag = musen
-      ? `<div class="card-musen-tag">📡 無線更新 予算化</div>`
-      : '';
-    el.innerHTML = `
-      <div class="card-name">${d.name}</div>
-      ${musenTag}
-      <div class="status-badges">${badgesHtml(d.status || {})}</div>
-      <div class="card-date">更新: ${d.date}</div>`;
-    el.addEventListener('click', () => openModal(i));
-    wrap.appendChild(el);
+    const pref = d.prefecture || '—';
+    if (!groupMap[pref]) {
+      groupMap[pref] = [];
+      groups.push({ pref, items: groupMap[pref] });
+    }
+    groupMap[pref].push({ d, i });
   });
+
+  const container = document.getElementById('pref-groups');
+  groups.forEach(({ pref, items }) => {
+    const groupEl = document.createElement('div');
+    groupEl.className = 'pref-group';
+
+    const label = document.createElement('div');
+    label.className = 'pref-label';
+    label.textContent = pref;
+    groupEl.appendChild(label);
+
+    const cardsEl = document.createElement('div');
+    cardsEl.className = 'cards';
+    items.forEach(({ d, i }) => {
+      const el = document.createElement('div');
+      el.className = 'card' + (d.musen_alert ? ' musen-alert' : '');
+      el.dataset.idx = i;
+      el.innerHTML = `<div class="card-name">${d.name}</div>`;
+      el.addEventListener('click', () => openModal(i));
+      cardsEl.appendChild(el);
+    });
+    groupEl.appendChild(cardsEl);
+    container.appendChild(groupEl);
+  });
+
   document.getElementById('cards-title').textContent = `自治体一覧 (${DATA.length} 件)`;
 }
 
@@ -594,6 +630,7 @@ def build():
     data_for_js = [
         {
             "name": m["name"],
+            "prefecture": m["prefecture"],
             "source": m["source"],
             "date": m["date"],
             "attacks": m["attacks"],
@@ -608,7 +645,7 @@ def build():
     ]
 
     html = HTML_TEMPLATE
-    html = html.replace("__BUILT_AT__", datetime.now().strftime("%Y-%m-%d %H:%M"))
+    html = html.replace("__BUILT_AT__", datetime.now(JST).strftime("%Y-%m-%d %H:%M JST"))
     html = html.replace("__COUNT__", str(len(munis)))
     html = html.replace("__DATA_JSON__", json.dumps(data_for_js, ensure_ascii=False))
 
