@@ -5,10 +5,10 @@
       "name": "大田市",
       "prefecture": "島根県",
       "theme": "防災",
-      "status": "in_progress",
-      "phases_done": ["B_budget"],
-      "phases_todo": ["E_analysis", "G_report"],
-      "note": "budget_raw.md収集中（エージェント実行中）"
+      "status": "done",
+      "phases_done": ["B_budget", "E_analysis", "G_report"],
+      "phases_todo": [],
+      "note": "予算調査・分析・レポート完了（議事録C/F未実施）"
     },
     {
       "name": "松江市",
