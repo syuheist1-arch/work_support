@@ -342,16 +342,10 @@
       "name": "雲南市",
       "prefecture": "島根県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": ["C_minutes", "E_analysis", "F_needs"],
+      "note": "消防機器整備47,536千円・デジタル防災無線38,776千円（R7比2倍増）"
     },
     {
       "name": "奥出雲町",
