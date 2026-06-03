@@ -16,7 +16,7 @@
     {"name": "琴浦町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "消防ポンプ自動車購入36,395千円（新規）・橋梁修繕5件・R7繰越情報通信基盤改修59,400千円（要確認）"},
     {"name": "北栄町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "ハザードマップ作成13,090千円（新規）・道路舗装53,500千円・橋梁修繕1橋10,000千円が主要案件"},
     {"name": "日吉津村", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "R8予算未公開（R7ベースで暫定レポート作成）。R8公開後に再調査が必要"},
-    {"name": "大山町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
+    {"name": "大山町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "防災マップ更新9,680千円（新規）・橋梁補修工事40,000千円・橋梁点検162橋27,000千円が主要案件"},
     {"name": "南部町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み"},
     {"name": "伯耆町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み（R8予算追加済み）"},
     {"name": "日野町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
