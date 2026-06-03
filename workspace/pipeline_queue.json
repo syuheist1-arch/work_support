@@ -1,100 +1,1212 @@
 {
   "description": "調査パイプライン キュー。statusをpendingにすると次回セッションで自動処理される。",
   "municipalities": [
-
-    {"name": "鳥取県", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み"},
-    {"name": "鳥取市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","E_analysis","G_report"], "phases_todo": [], "note": "議事録・ニーズ分析は未実施（骨格予算のみ調査）"},
-    {"name": "米子市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み"},
-    {"name": "倉吉市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "議事録・分析は未実施"},
-    {"name": "境港市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "議事録・分析は未実施"},
-    {"name": "岩美町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "事業別明細非公開のため款計のみ。詳細は担当課への直接確認が必要"},
-    {"name": "若桜町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "予算書詳細非公開のため概要版のみ。ハザードマップ更新289万円が注目点"},
-    {"name": "智頭町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "防災無線操作卓更新9947万円・J-ALERT随意契約4-6月期発注予定"},
-    {"name": "八頭町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "小型可搬ポンプ5台・橋梁メンテ1億280万円が主要案件"},
-    {"name": "三朝町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "防災基盤整備(消防施設)9200万円新規・橋梁補修1億円超が主要案件"},
-    {"name": "湯梨浜町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "消防車両購入事業18,690千円（小型ポンプ積載車2台）・広域連合負担金271,655千円が主要案件。防災無線はMCA保守のみ"},
-    {"name": "琴浦町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "消防ポンプ自動車購入36,395千円（新規）・橋梁修繕5件・R7繰越情報通信基盤改修59,400千円（要確認）"},
-    {"name": "北栄町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "ハザードマップ作成13,090千円（新規）・道路舗装53,500千円・橋梁修繕1橋10,000千円が主要案件"},
-    {"name": "日吉津村", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "R8予算未公開（R7ベースで暫定レポート作成）。R8公開後に再調査が必要"},
-    {"name": "大山町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "防災マップ更新9,680千円（新規）・橋梁補修工事40,000千円・橋梁点検162橋27,000千円が主要案件"},
-    {"name": "南部町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み"},
-    {"name": "伯耆町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み（R8予算追加済み）"},
-    {"name": "日野町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "指定避難所生活環境改善40,600千円（新規）・J-ALERT整備8,400千円・橋梁補修89,100千円が主要案件"},
-    {"name": "江府町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "J-ALERT設備8,932千円（緊急防災・減災事業債）・ハザードマップ委託2,794千円・橋梁修繕56,000千円が主要案件"},
-    {"name": "日南町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-
-    {"name": "松江市", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "浜田市", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "出雲市", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "益田市", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "大田市", "prefecture": "島根県", "theme": "防災", "status": "done", "phases_done": ["B_budget","E_analysis","G_report"], "phases_todo": ["C_minutes","F_needs"], "note": "予算調査済み。議事録未実施"},
-    {"name": "安来市", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "江津市", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "雲南市", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "奥出雲町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "飯南町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "川本町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "美郷町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "邑南町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "津和野町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "吉賀町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "隠岐の島町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "海士町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "西ノ島町", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "知夫村", "prefecture": "島根県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-
-    {"name": "岡山市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "倉敷市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "津山市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "玉野市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "笠岡市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "井原市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "総社市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "高梁市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "新見市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "備前市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "瀬戸内市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "赤磐市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "真庭市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "美作市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "浅口市", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "早島町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "里庄町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "矢掛町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "新庄村", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "鏡野町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "勝央町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "奈義町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "西粟倉村", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "久米南町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "美咲町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "和気町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "吉備中央町", "prefecture": "岡山県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-
-    {"name": "高松市", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "丸亀市", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "坂出市", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "善通寺市", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "観音寺市", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "さぬき市", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "東かがわ市", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "三豊市", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "土庄町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "小豆島町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "三木町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "直島町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "宇多津町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "綾川町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "琴平町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "多度津町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
-    {"name": "まんのう町", "prefecture": "香川県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""}
+    {
+      "name": "鳥取県",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "調査済み"
+    },
+    {
+      "name": "鳥取市",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "E_analysis",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "議事録・ニーズ分析は未実施（骨格予算のみ調査）"
+    },
+    {
+      "name": "米子市",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "調査済み"
+    },
+    {
+      "name": "倉吉市",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "議事録・分析は未実施"
+    },
+    {
+      "name": "境港市",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "議事録・分析は未実施"
+    },
+    {
+      "name": "岩美町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "事業別明細非公開のため款計のみ。詳細は担当課への直接確認が必要"
+    },
+    {
+      "name": "若桜町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "予算書詳細非公開のため概要版のみ。ハザードマップ更新289万円が注目点"
+    },
+    {
+      "name": "智頭町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "防災無線操作卓更新9947万円・J-ALERT随意契約4-6月期発注予定"
+    },
+    {
+      "name": "八頭町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "小型可搬ポンプ5台・橋梁メンテ1億280万円が主要案件"
+    },
+    {
+      "name": "三朝町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "防災基盤整備(消防施設)9200万円新規・橋梁補修1億円超が主要案件"
+    },
+    {
+      "name": "湯梨浜町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防車両購入事業18,690千円（小型ポンプ積載車2台）・広域連合負担金271,655千円が主要案件。防災無線はMCA保守のみ"
+    },
+    {
+      "name": "琴浦町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防ポンプ自動車購入36,395千円（新規）・橋梁修繕5件・R7繰越情報通信基盤改修59,400千円（要確認）"
+    },
+    {
+      "name": "北栄町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "ハザードマップ作成13,090千円（新規）・道路舗装53,500千円・橋梁修繕1橋10,000千円が主要案件"
+    },
+    {
+      "name": "日吉津村",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "R8予算未公開（R7ベースで暫定レポート作成）。R8公開後に再調査が必要"
+    },
+    {
+      "name": "大山町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "防災マップ更新9,680千円（新規）・橋梁補修工事40,000千円・橋梁点検162橋27,000千円が主要案件"
+    },
+    {
+      "name": "南部町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "調査済み"
+    },
+    {
+      "name": "伯耆町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "調査済み（R8予算追加済み）"
+    },
+    {
+      "name": "日野町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "指定避難所生活環境改善40,600千円（新規）・J-ALERT整備8,400千円・橋梁補修89,100千円が主要案件"
+    },
+    {
+      "name": "江府町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "J-ALERT設備8,932千円（緊急防災・減災事業債）・ハザードマップ委託2,794千円・橋梁修繕56,000千円が主要案件"
+    },
+    {
+      "name": "日南町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "予算書PDF未公開。議会だよりNo.183ベースで作成。大宮地域振興センター改修1.6億円（避難所含む）・消防ホース214本更新"
+    },
+    {
+      "name": "松江市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "浜田市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "出雲市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "益田市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "大田市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "E_analysis",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "F_needs"
+      ],
+      "note": "予算調査済み。議事録未実施"
+    },
+    {
+      "name": "安来市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "江津市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "雲南市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "奥出雲町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "飯南町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "川本町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "美郷町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "邑南町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "津和野町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "吉賀町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "隠岐の島町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "海士町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "西ノ島町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "知夫村",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "岡山市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "倉敷市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "津山市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "玉野市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "笠岡市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "井原市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "総社市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "高梁市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "新見市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "備前市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "瀬戸内市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "赤磐市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "真庭市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "美作市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "浅口市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "早島町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "里庄町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "矢掛町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "新庄村",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "鏡野町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "勝央町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "奈義町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "西粟倉村",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "久米南町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "美咲町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "和気町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "吉備中央町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "高松市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "丸亀市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "坂出市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "善通寺市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "観音寺市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "さぬき市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "東かがわ市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "三豊市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "土庄町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "小豆島町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "三木町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "直島町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "宇多津町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "綾川町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "琴平町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "多度津町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "まんのう町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "pending",
+      "phases_done": [],
+      "phases_todo": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    }
   ],
   "phases": {
-    "B_budget":    "予算調査（collector-budget）",
-    "C_minutes":   "議事録調査（collector-minutes）",
+    "B_budget": "予算調査（collector-budget）",
+    "C_minutes": "議事録調査（collector-minutes）",
     "D_contracts": "受注実績調査（collector-budget 受注モード）",
-    "E_analysis":  "予算分析（analyst-budget）",
-    "F_needs":     "ニーズ分析（analyst-needs）",
-    "G_report":    "レポート作成（qa-editor）"
+    "E_analysis": "予算分析（analyst-budget）",
+    "F_needs": "ニーズ分析（analyst-needs）",
+    "G_report": "レポート作成（qa-editor）"
   }
 }
