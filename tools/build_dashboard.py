@@ -99,6 +99,41 @@ def extract_status_counts(text: str) -> dict:
     return counts
 
 
+def has_musen_budget(text: str) -> bool:
+    """防災行政無線の設計・更新・改修が攻めどころ表で予算化・公告済みとなっているか判定する。
+    過去の随意契約実績行（R6.x.x / R7.x.x 契約日を含む行）は対象外。
+    """
+    actions = ["設計", "更新", "改修", "整備", "部分更新", "機器更新", "システム更新"]
+    in_table = False
+    header_seen = False
+    for line in text.splitlines():
+        if re.search(r"##.*攻めどころ", line):
+            in_table = True
+            header_seen = False
+            continue
+        if in_table:
+            if line.startswith("##"):
+                break
+            if "|" not in line:
+                continue
+            if not header_seen:
+                if "提案テーマ" in line or "順位" in line:
+                    header_seen = True
+                continue
+            if re.match(r"^[-|:\s]+$", line):
+                continue
+            cols = [c.strip() for c in line.strip("|").split("|")]
+            if len(cols) < 2:
+                continue
+            theme = cols[1]
+            # 予算化・未公告 または 公告済み の行のみ対象
+            if not re.search(r"予算化|未公告|公告済み", theme):
+                continue
+            if "防災行政無線" in theme and any(a in theme for a in actions):
+                return True
+    return False
+
+
 def extract_keypersons(text: str) -> str:
     """キーパーソン節の最初の表行から名前を最大3件カンマ区切りで返す。"""
     in_section = False
@@ -153,6 +188,7 @@ def collect_municipalities() -> list[dict]:
             "keypersons": extract_keypersons(text),
             "max_opportunity": extract_max_opportunity(text),
             "status": status,
+            "musen_alert": has_musen_budget(text),
             "markdown": text,
         })
     return munis
@@ -196,24 +232,34 @@ header .built-at { font-size: .7rem; color: var(--text-muted); margin-left: auto
 .section-title { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .6rem; }
 
 /* ── Cards ── */
-.cards { display: flex; gap: .8rem; flex-wrap: wrap; }
+.cards { display: flex; gap: .6rem; flex-wrap: wrap; }
 .card {
-  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-  padding: .85rem 1rem; cursor: pointer; transition: border-color .15s, transform .1s;
-  min-width: 200px; flex: 1 1 200px; max-width: 280px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: .6rem .9rem; cursor: pointer; transition: border-color .15s, transform .1s;
+  min-width: 130px; flex: 0 0 auto;
+  display: flex; flex-direction: column; gap: .3rem;
 }
 .card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .card.active { border-color: var(--accent); background: var(--surface2); box-shadow: 0 0 0 1px var(--accent); }
-.card-name { font-size: 1rem; font-weight: 700; margin-bottom: .2rem; }
-.card-date { font-size: .68rem; color: var(--text-muted); margin-bottom: .4rem; }
-.status-badges { display: flex; gap: .3rem; flex-wrap: wrap; margin-bottom: .4rem; }
-.badge-status { font-size: .62rem; padding: .12em .55em; border-radius: 99px; font-weight: 600; white-space: nowrap; }
+/* 防災行政無線 予算化強調 */
+.card.musen-alert {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 1px color-mix(in srgb,var(--yellow) 40%,transparent),
+              0 0 8px color-mix(in srgb,var(--yellow) 20%,transparent);
+}
+.card.musen-alert .card-name { color: var(--yellow); }
+.card.musen-alert:hover { border-color: var(--yellow); transform: translateY(-2px); }
+.card-name { font-size: .9rem; font-weight: 700; }
+.card-date { font-size: .65rem; color: var(--text-muted); }
+.card-musen-tag {
+  font-size: .6rem; font-weight: 700; letter-spacing: .04em;
+  color: var(--yellow); display: flex; align-items: center; gap: .25rem;
+}
+.status-badges { display: flex; gap: .25rem; flex-wrap: wrap; }
+.badge-status { font-size: .6rem; padding: .1em .5em; border-radius: 99px; font-weight: 600; white-space: nowrap; }
 .badge-announced { background: color-mix(in srgb,var(--green) 18%,transparent); color: var(--green); border: 1px solid var(--green); }
 .badge-budgeted  { background: color-mix(in srgb,var(--yellow) 18%,transparent); color: var(--yellow); border: 1px solid var(--yellow); }
 .badge-pipeline  { background: color-mix(in srgb,var(--text-muted) 15%,transparent); color: var(--text-muted); border: 1px solid var(--text-muted); }
-.card-attacks { list-style: none; }
-.card-attacks li { font-size: .73rem; padding: .12rem 0; display: flex; gap: .35rem; }
-.card-attacks li::before { content: "▸"; color: var(--accent); flex-shrink: 0; }
 
 /* ── Compare table ── */
 .table-wrap { overflow-x: auto; }
@@ -490,12 +536,16 @@ function buildCards() {
   const wrap = document.getElementById('cards');
   DATA.forEach((d, i) => {
     const el = document.createElement('div');
-    el.className = 'card';
+    const musen = d.musen_alert;
+    el.className = 'card' + (musen ? ' musen-alert' : '');
+    const musenTag = musen
+      ? `<div class="card-musen-tag">📡 無線更新 予算化</div>`
+      : '';
     el.innerHTML = `
       <div class="card-name">${d.name}</div>
-      <div class="card-date">更新: ${d.date}</div>
+      ${musenTag}
       <div class="status-badges">${badgesHtml(d.status || {})}</div>
-      <ul class="card-attacks">${d.attacks.map(a => `<li>${a}</li>`).join('')}</ul>`;
+      <div class="card-date">更新: ${d.date}</div>`;
     el.addEventListener('click', () => openModal(i));
     wrap.appendChild(el);
   });
@@ -546,6 +596,7 @@ def build():
             "keypersons": m["keypersons"],
             "max_opportunity": m["max_opportunity"],
             "status": m["status"],
+            "musen_alert": m["musen_alert"],
             "markdown": m["markdown"],
         }
         for m in munis
