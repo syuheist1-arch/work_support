@@ -270,16 +270,13 @@
       "name": "浜田市",
       "prefecture": "島根県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "消防救急デジタル無線設備更新7,700千円（新規・設計）・消防施設等整備85,161千円・防災まちづくり45,502千円"
     },
     {
       "name": "出雲市",
