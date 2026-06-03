@@ -282,16 +282,13 @@
       "name": "出雲市",
       "prefecture": "島根県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "消防緊急通信指令施設機器更新201,600千円・消防施設整備計336,600千円・防災対策費80,100千円"
     },
     {
       "name": "益田市",
