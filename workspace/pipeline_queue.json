@@ -6,7 +6,7 @@
     {"name": "鳥取市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","E_analysis","G_report"], "phases_todo": [], "note": "議事録・ニーズ分析は未実施（骨格予算のみ調査）"},
     {"name": "米子市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "phases_todo": [], "note": "調査済み"},
     {"name": "倉吉市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "議事録・分析は未実施"},
-    {"name": "境港市", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
+    {"name": "境港市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "議事録・分析は未実施"},
     {"name": "岩美町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
     {"name": "若桜町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
     {"name": "智頭町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
