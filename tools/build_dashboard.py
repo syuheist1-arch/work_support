@@ -193,7 +193,6 @@ header .built-at { font-size: .7rem; color: var(--text-muted); margin-left: auto
 
 .page { max-width: 1600px; margin: 0 auto; padding: 1.2rem 1.5rem; display: flex; flex-direction: column; gap: 1.2rem; }
 
-/* ── section title ── */
 .section-title { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .6rem; }
 
 /* ── Cards ── */
@@ -226,79 +225,94 @@ tr.active-row td { background: color-mix(in srgb,var(--accent) 10%,transparent);
 .muni-link { color: var(--accent); cursor: pointer; font-weight: 600; }
 .muni-link:hover { text-decoration: underline; }
 
-/* ── Detail panel ── */
-#detail-panel {
+/* ══════════════════════════════════════════
+   MODAL
+══════════════════════════════════════════ */
+#modal-overlay {
   display: none;
-  border: 1px solid var(--accent);
-  border-radius: 12px;
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(0,0,0,.65);
+  backdrop-filter: blur(2px);
+}
+#modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; padding: 1.5vh 1vw; }
+
+#modal {
   background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  width: 100%;
+  max-width: 1400px;
+  max-height: 96vh;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
-#detail-panel.visible { display: block; }
 
-/* header bar */
-.dp-header {
+/* modal header */
+.modal-header {
   display: flex; align-items: center; gap: .8rem; flex-wrap: wrap;
-  padding: .8rem 1.2rem;
+  padding: .75rem 1.2rem;
   background: var(--surface2);
   border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
 }
-.dp-title { font-size: 1rem; font-weight: 700; }
-.dp-meta { font-size: .72rem; color: var(--text-muted); }
-#detail-close {
-  margin-left: auto; background: none; border: 1px solid var(--border);
-  color: var(--text-muted); padding: .25rem .7rem; border-radius: 6px;
+.modal-title { font-size: 1.05rem; font-weight: 700; }
+.modal-meta  { font-size: .72rem; color: var(--text-muted); }
+.modal-nav   { display: flex; gap: .4rem; margin-left: auto; align-items: center; }
+.modal-nav button {
+  background: none; border: 1px solid var(--border);
+  color: var(--text-muted); padding: .22rem .65rem; border-radius: 6px;
   cursor: pointer; font-size: .75rem;
 }
-#detail-close:hover { border-color: var(--accent); color: var(--text); }
-
-/* section grid — 3 columns on wide screens */
-.dp-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
+.modal-nav button:hover:not(:disabled) { border-color: var(--accent); color: var(--text); }
+.modal-nav button:disabled { opacity: .35; cursor: default; }
+.modal-close {
+  background: none; border: 1px solid var(--border);
+  color: var(--text-muted); padding: .22rem .7rem; border-radius: 6px;
+  cursor: pointer; font-size: .75rem;
 }
-@media (min-width: 900px)  { .dp-grid { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 1280px) { .dp-grid { grid-template-columns: 2fr 1fr 1fr; } }
+.modal-close:hover { border-color: var(--red); color: var(--red); }
 
-.dp-section {
-  padding: 1rem 1.2rem;
-  border-right: 1px solid var(--border);
+/* tab bar */
+.tab-bar {
+  display: flex; gap: 0; overflow-x: auto; flex-shrink: 0;
   border-bottom: 1px solid var(--border);
-  overflow: hidden;
+  background: var(--surface2);
+  scrollbar-width: none;
 }
-.dp-section:last-child { border-right: none; }
-.dp-section-title {
-  font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--accent); margin-bottom: .6rem;
+.tab-bar::-webkit-scrollbar { display: none; }
+.tab-btn {
+  padding: .55rem 1.1rem; font-size: .78rem; white-space: nowrap;
+  background: none; border: none; border-bottom: 2px solid transparent;
+  color: var(--text-muted); cursor: pointer; transition: color .15s, border-color .15s;
 }
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
 
-/* rendered markdown inside sections */
-.dp-body p { font-size: .82rem; line-height: 1.75; margin: .35em 0; }
-.dp-body ul, .dp-body ol { padding-left: 1.3em; font-size: .82rem; line-height: 1.75; margin: .35em 0; }
-.dp-body li { margin: .15em 0; }
+/* tab content */
+.tab-content {
+  flex: 1; overflow-y: auto; padding: 1.4rem 1.6rem;
+}
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+
+/* rendered markdown */
+.dp-body { max-width: 100%; }
+.dp-body h3 { font-size: .92rem; font-weight: 700; margin: 1em 0 .4em; color: var(--accent); }
+.dp-body p  { font-size: .85rem; line-height: 1.8; margin: .4em 0; }
+.dp-body ul, .dp-body ol { padding-left: 1.4em; font-size: .85rem; line-height: 1.8; margin: .4em 0; }
+.dp-body li { margin: .2em 0; }
 .dp-body strong { color: var(--yellow); }
 .dp-body a { color: var(--accent); word-break: break-all; }
 .dp-body code { background: var(--surface2); padding: .1em .35em; border-radius: 3px; font-size: .8em; }
-/* tables in detail */
-.dp-body .tbl-wrap { overflow-x: auto; margin: .5em 0; }
-.dp-body table { width: 100%; border-collapse: collapse; font-size: .75rem; white-space: nowrap; }
-.dp-body th { background: var(--surface2); padding: .4rem .6rem; font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); }
-.dp-body td { padding: .38rem .6rem; border-bottom: 1px solid var(--border); vertical-align: top; white-space: normal; }
-.dp-body td:first-child { white-space: nowrap; }
-/* confirmed/budgeted/pipeline color in table cells */
-.dp-body td:first-child { font-weight: 600; }
-
-/* summary bullets */
-.summary-list { list-style: none; padding: 0; }
-.summary-list li {
-  font-size: .82rem; line-height: 1.7;
-  padding: .3rem 0 .3rem .9rem;
-  border-bottom: 1px solid var(--border);
-  position: relative;
-}
-.summary-list li:last-child { border-bottom: none; }
-.summary-list li::before { content: "●"; color: var(--accent); position: absolute; left: 0; font-size: .55rem; top: .55rem; }
+.dp-body blockquote { border-left: 3px solid var(--accent2); padding-left: .9em; color: var(--text-muted); margin: .5em 0; }
+/* tables — full width, scrollable on narrow screens */
+.dp-body .tbl-wrap { overflow-x: auto; margin: .7em 0; border-radius: 6px; border: 1px solid var(--border); }
+.dp-body table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+.dp-body th { background: var(--surface2); padding: .45rem .75rem; font-weight: 600; color: var(--text-muted); border-bottom: 1px solid var(--border); white-space: nowrap; text-align: left; }
+.dp-body td { padding: .42rem .75rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+.dp-body tr:last-child td { border-bottom: none; }
+.dp-body tr:hover td { background: var(--surface2); }
 </style>
 </head>
 <body>
@@ -309,13 +323,11 @@ tr.active-row td { background: color-mix(in srgb,var(--accent) 10%,transparent);
 </header>
 
 <div class="page">
-  <!-- カード一覧 -->
   <section>
     <div class="section-title" id="cards-title">自治体一覧 (__COUNT__ 件)</div>
     <div class="cards" id="cards"></div>
   </section>
 
-  <!-- 比較表 -->
   <section>
     <div class="section-title">横断比較</div>
     <div class="table-wrap">
@@ -328,29 +340,36 @@ tr.active-row td { background: color-mix(in srgb,var(--accent) 10%,transparent);
       </table>
     </div>
   </section>
+</div>
 
-  <!-- 詳細パネル（フル幅・横並びグリッド） -->
-  <div id="detail-panel">
-    <div class="dp-header">
-      <span class="dp-title" id="dp-title">-</span>
-      <span class="dp-meta" id="dp-meta"></span>
-      <button id="detail-close" onclick="closeDetail()">✕ 閉じる</button>
+<!-- ══ MODAL ══ -->
+<div id="modal-overlay" onclick="overlayClick(event)">
+  <div id="modal">
+    <div class="modal-header">
+      <span class="modal-title" id="modal-title">-</span>
+      <span class="modal-meta"  id="modal-meta"></span>
+      <div class="modal-nav">
+        <button id="btn-prev" onclick="navigate(-1)">◀ 前</button>
+        <button id="btn-next" onclick="navigate(+1)">次 ▶</button>
+        <button class="modal-close" onclick="closeModal()">✕ 閉じる</button>
+      </div>
     </div>
-    <div class="dp-grid" id="dp-grid"></div>
+    <div class="tab-bar" id="tab-bar"></div>
+    <div class="tab-content" id="tab-content"></div>
   </div>
 </div>
 
 <script>
 const DATA = __DATA_JSON__;
+let currentIdx = -1;
 
-/* Section order for detail panel: label → regex that matches the ## heading */
 const SECTIONS = [
-  { key: 'summary',   label: 'エグゼクティブサマリー', re: /エグゼクティブ|サマリ/ },
-  { key: 'attacks',   label: '攻めどころ',             re: /攻めどころ/ },
-  { key: 'budget',    label: '防災予算',               re: /防災予算/ },
-  { key: 'minutes',   label: '議会・首長の関心',        re: /議会|首長/ },
-  { key: 'actions',   label: '次アクション',            re: /次アクション/ },
-  { key: 'issues',    label: '要確認事項',              re: /要確認/ },
+  { key: 'summary',  label: 'サマリー',       re: /エグゼクティブ|サマリ/ },
+  { key: 'attacks',  label: '攻めどころ',      re: /攻めどころ/ },
+  { key: 'budget',   label: '防災予算',        re: /防災予算/ },
+  { key: 'minutes',  label: '議会・首長の関心', re: /議会|首長/ },
+  { key: 'actions',  label: '次アクション',    re: /次アクション/ },
+  { key: 'issues',   label: '要確認事項',      re: /要確認/ },
 ];
 
 function parseSections(markdown) {
@@ -368,7 +387,6 @@ function parseSections(markdown) {
       result[cur].push(line);
     }
   }
-  // trim leading/trailing blank lines
   for (const k of Object.keys(result)) {
     while (result[k].length && !result[k][0].trim()) result[k].shift();
     while (result[k].length && !result[k][result[k].length-1].trim()) result[k].pop();
@@ -376,52 +394,97 @@ function parseSections(markdown) {
   return result;
 }
 
-function renderSection(lines) {
+function renderMd(lines) {
   const md = lines.join('\n');
   let html = marked.parse(md);
-  // wrap tables in scrollable div
   html = html.replace(/<table>/g, '<div class="tbl-wrap"><table>').replace(/<\/table>/g, '</table></div>');
   return `<div class="dp-body">${html}</div>`;
 }
 
-function badgesHtml(s, size) {
+function badgesHtml(s) {
   return [
-    s['公告済み'] > 0       ? `<span class="badge-status badge-announced">公告済み ${s['公告済み']}件</span>` : '',
-    s['予算化・未公告'] > 0  ? `<span class="badge-status badge-budgeted">予算化・未公告 ${s['予算化・未公告']}件</span>` : '',
-    s['仕込み'] > 0          ? `<span class="badge-status badge-pipeline">仕込み ${s['仕込み']}件</span>` : '',
+    s['公告済み'] > 0      ? `<span class="badge-status badge-announced">公告済み ${s['公告済み']}件</span>` : '',
+    s['予算化・未公告'] > 0 ? `<span class="badge-status badge-budgeted">予算化・未公告 ${s['予算化・未公告']}件</span>` : '',
+    s['仕込み'] > 0         ? `<span class="badge-status badge-pipeline">仕込み ${s['仕込み']}件</span>` : '',
   ].filter(Boolean).join('');
 }
 
-function showDetail(idx) {
+function openModal(idx) {
+  currentIdx = idx;
   const d = DATA[idx];
-  document.getElementById('dp-title').textContent = d.name + ' / 防災';
-  document.getElementById('dp-meta').textContent = '更新: ' + d.date;
+
+  document.getElementById('modal-title').textContent = d.name + ' / 防災';
+  document.getElementById('modal-meta').textContent  = '更新: ' + d.date;
+  document.getElementById('btn-prev').disabled = idx === 0;
+  document.getElementById('btn-next').disabled = idx === DATA.length - 1;
 
   const sections = parseSections(d.markdown);
-  const grid = document.getElementById('dp-grid');
-  grid.innerHTML = '';
 
+  // build tabs
+  const tabBar     = document.getElementById('tab-bar');
+  const tabContent = document.getElementById('tab-content');
+  tabBar.innerHTML = '';
+  tabContent.innerHTML = '';
+
+  let firstKey = null;
   for (const s of SECTIONS) {
     if (!sections[s.key] || !sections[s.key].length) continue;
-    const div = document.createElement('div');
-    div.className = 'dp-section';
-    div.innerHTML = `<div class="dp-section-title">${s.label}</div>${renderSection(sections[s.key])}`;
-    grid.appendChild(div);
+    if (!firstKey) firstKey = s.key;
+
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn';
+    btn.dataset.key = s.key;
+    btn.textContent = s.label;
+    btn.onclick = () => switchTab(s.key);
+    tabBar.appendChild(btn);
+
+    const pane = document.createElement('div');
+    pane.className = 'tab-pane';
+    pane.id = 'pane-' + s.key;
+    pane.innerHTML = renderMd(sections[s.key]);
+    tabContent.appendChild(pane);
   }
 
-  const panel = document.getElementById('detail-panel');
-  panel.classList.add('visible');
+  if (firstKey) switchTab(firstKey);
+
+  // highlight cards / table rows
   document.querySelectorAll('.card').forEach((c, i) => c.classList.toggle('active', i === idx));
   document.querySelectorAll('#table-body tr').forEach((r, i) => r.classList.toggle('active-row', i === idx));
-  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
 
-function closeDetail() {
-  document.getElementById('detail-panel').classList.remove('visible');
-  document.getElementById('dp-grid').innerHTML = '';
+function switchTab(key) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.key === key));
+  document.querySelectorAll('.tab-pane').forEach(p => p.classList.toggle('active', p.id === 'pane-' + key));
+  document.getElementById('tab-content').scrollTop = 0;
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
   document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
   document.querySelectorAll('#table-body tr').forEach(r => r.classList.remove('active-row'));
+  currentIdx = -1;
 }
+
+function navigate(dir) {
+  const next = currentIdx + dir;
+  if (next >= 0 && next < DATA.length) openModal(next);
+}
+
+function overlayClick(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
+
+document.addEventListener('keydown', e => {
+  const overlay = document.getElementById('modal-overlay');
+  if (!overlay.classList.contains('open')) return;
+  if (e.key === 'Escape')      closeModal();
+  if (e.key === 'ArrowRight')  navigate(+1);
+  if (e.key === 'ArrowLeft')   navigate(-1);
+});
 
 function buildCards() {
   const wrap = document.getElementById('cards');
@@ -433,7 +496,7 @@ function buildCards() {
       <div class="card-date">更新: ${d.date}</div>
       <div class="status-badges">${badgesHtml(d.status || {})}</div>
       <ul class="card-attacks">${d.attacks.map(a => `<li>${a}</li>`).join('')}</ul>`;
-    el.addEventListener('click', () => showDetail(i));
+    el.addEventListener('click', () => openModal(i));
     wrap.appendChild(el);
   });
   document.getElementById('cards-title').textContent = `自治体一覧 (${DATA.length} 件)`;
@@ -450,7 +513,7 @@ function buildTable() {
     ].filter(Boolean).join(' ');
     const tr = document.createElement('tr');
     tr.innerHTML = `
-      <td><a class="muni-link" onclick="showDetail(${i})">${d.name}</a></td>
+      <td><a class="muni-link" onclick="openModal(${i})">${d.name}</a></td>
       <td style="white-space:nowrap">${b || '-'}</td>
       <td>${d.top_attack}</td>
       <td>${d.keypersons}</td>
