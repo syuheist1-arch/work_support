@@ -11,7 +11,7 @@
     {"name": "若桜町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "予算書詳細非公開のため概要版のみ。ハザードマップ更新289万円が注目点"},
     {"name": "智頭町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "防災無線操作卓更新9947万円・J-ALERT随意契約4-6月期発注予定"},
     {"name": "八頭町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "小型可搬ポンプ5台・橋梁メンテ1億280万円が主要案件"},
-    {"name": "三朝町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
+    {"name": "三朝町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "防災基盤整備(消防施設)9200万円新規・橋梁補修1億円超が主要案件"},
     {"name": "湯梨浜町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
     {"name": "琴浦町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
     {"name": "北栄町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
