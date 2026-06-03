@@ -8,7 +8,7 @@
     {"name": "倉吉市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "議事録・分析は未実施"},
     {"name": "境港市", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "議事録・分析は未実施"},
     {"name": "岩美町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "事業別明細非公開のため款計のみ。詳細は担当課への直接確認が必要"},
-    {"name": "若桜町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
+    {"name": "若桜町", "prefecture": "鳥取県", "theme": "防災", "status": "done", "phases_done": ["B_budget","G_report"], "phases_todo": [], "note": "予算書詳細非公開のため概要版のみ。ハザードマップ更新289万円が注目点"},
     {"name": "智頭町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
     {"name": "八頭町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
     {"name": "三朝町", "prefecture": "鳥取県", "theme": "防災", "status": "pending", "phases_done": [], "phases_todo": ["B_budget","C_minutes","E_analysis","F_needs","G_report"], "note": ""},
