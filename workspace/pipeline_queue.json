@@ -535,16 +535,10 @@
       "name": "総社市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "高規格救急自動車44,000千円・多機能型指揮支援車両（債務負担40,000千円）"
     },
     {
       "name": "高梁市",
