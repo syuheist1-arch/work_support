@@ -553,16 +553,10 @@
       "name": "瀬戸内市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "防災情報伝達システム更新49,500千円（新規・減災債100%）・学校空調205,581千円"
     },
     {
       "name": "赤磐市",
