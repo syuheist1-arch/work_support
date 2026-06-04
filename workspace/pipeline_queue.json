@@ -774,16 +774,10 @@
       "name": "鏡野町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "予算書本体(16056.pdf)は画像PDFのためテキスト抽出不可。概要PDFから施策情報を取得。個別金額未確認。"
     },
     {
       "name": "勝央町",
