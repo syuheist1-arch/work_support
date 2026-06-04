@@ -753,16 +753,13 @@
       "name": "矢掛町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "公式サイト503エラーのため取得不可。役場TEL:0866-82-1010"
     },
     {
       "name": "新庄村",
