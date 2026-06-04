@@ -738,16 +738,13 @@
       "name": "里庄町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "内水浸水想定氾濫解析業務・配水池耐震診断・配水管耐震化工事が第2四半期発注予定"
     },
     {
       "name": "矢掛町",
