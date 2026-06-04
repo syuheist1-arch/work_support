@@ -295,7 +295,10 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [
         "C_minutes",
         "E_analysis",
@@ -325,8 +328,15 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
       "note": "消防指令システム更新226,000千円（債務負担行為）が最重要案件"
     },
     {
@@ -334,8 +344,15 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
       "note": "防災マップ更新19,217千円・江津邑智消防組合庁舎改修144,837千円含む"
     },
     {
@@ -343,8 +360,15 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
       "note": "消防機器整備47,536千円・デジタル防災無線38,776千円（R7比2倍増）"
     },
     {
@@ -352,8 +376,14 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
       ],
       "note": ""
     },
@@ -362,8 +392,15 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
       "note": "消防車両2台20,565千円・ハザードマップ新規2,660千円・防災無線バッテリー交換新規4,112千円"
     },
     {
@@ -371,8 +408,15 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
       "note": "治水対策543,000千円・排水管布設45,000千円。消防費詳細は予算書未公開"
     },
     {
@@ -380,8 +424,14 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
       ],
       "note": ""
     },
@@ -390,8 +440,13 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
         "F_needs",
         "G_report"
       ],
@@ -402,8 +457,14 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
       ],
       "note": ""
     },
@@ -412,8 +473,13 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
         "F_needs",
         "G_report"
       ],
@@ -424,8 +490,14 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis", "F_needs"
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
       ],
       "note": ""
     },
@@ -434,7 +506,10 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "公式サイトJSレンダリング・広報Flash形式のため予算詳細取得不可。役場TEL:08514-2-0114"
     },
@@ -443,8 +518,13 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
-      "phases_todo": ["C_minutes", "E_analysis",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
         "F_needs",
         "G_report"
       ],
@@ -455,7 +535,10 @@
       "prefecture": "島根県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "公式サイト503停止のため予算詳細取得不可。役場TEL:08514-8-2211"
     },
@@ -464,7 +547,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防救急デジタル無線940百万円・消防指令システム712百万円が主要案件"
     },
@@ -473,7 +559,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "指令設備更新390,500千円・デジタル無線134,750千円・消防費+16.6%"
     },
@@ -482,7 +571,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "骨格予算（市長選挙）のため詳細不可。6月補正後に再調査推奨"
     },
@@ -491,7 +583,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "JSレンダリングサイトのため予算取得不可。役場TEL:0863-32-4111"
     },
@@ -500,7 +595,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "J-ALERT連携6,710千円・ハザードマップ4,730千円（新規）・消防費964,610千円"
     },
@@ -509,7 +607,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "通信指令システム・デジタル無線更新358,963千円（消防組合）・消防費+46.3%"
     },
@@ -518,7 +619,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "高規格救急自動車44,000千円・多機能型指揮支援車両（債務負担40,000千円）"
     },
@@ -527,7 +631,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "水道遠方監視装置更新88,000千円（新規）・内水排除277,100千円・消防費687,420千円"
     },
@@ -536,7 +643,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "防災マップ更新12,100千円（新規）・消防体制再編推進1,000千円（新規）"
     },
@@ -545,7 +655,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "J-ALERT更新（緊急防災事業債）・消防費909,019千円（+18.1%）"
     },
@@ -554,7 +667,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "防災情報伝達システム更新49,500千円（新規・減災債100%）・学校空調205,581千円"
     },
@@ -563,7 +679,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防指令中間更新・デジタル無線調達支援委託（消防施設費67,297千円内）・消防費963,292千円"
     },
@@ -571,31 +690,25 @@
       "name": "真庭市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "真庭市: 消防救急デジタル無線更新（債務負担382,462千円・R8-10）が最重要"
     },
     {
       "name": "美作市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "美作市: 骨格予算。消防自動車整備81,200千円・防災公園整備230,942千円が主要案件"
     },
     {
       "name": "浅口市",
