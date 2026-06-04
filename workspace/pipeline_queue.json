@@ -411,12 +411,9 @@
       "name": "吉賀町",
       "prefecture": "島根県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": ["C_minutes", "E_analysis",
         "F_needs",
         "G_report"
       ],
