@@ -508,16 +508,10 @@
       "name": "井原市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "通信指令システム・デジタル無線更新358,963千円（消防組合）・消防費+46.3%"
     },
     {
       "name": "総社市",
@@ -532,16 +526,10 @@
       "name": "高梁市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "水道遠方監視装置更新88,000千円（新規）・内水排除277,100千円・消防費687,420千円"
     },
     {
       "name": "新見市",
