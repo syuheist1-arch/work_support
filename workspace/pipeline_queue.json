@@ -714,31 +714,25 @@
       "name": "浅口市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "骨格予算。6月補正後に再調査推奨。倉敷市常備消防負担金76,366千円（新規）が注目点"
     },
     {
       "name": "早島町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
-      "note": ""
+      "phases_todo": [],
+      "note": "消防費291,372千円。消防施設整備18,961千円（ポンプ・積載車・ホース乾燥塔）が案件"
     },
     {
       "name": "里庄町",
