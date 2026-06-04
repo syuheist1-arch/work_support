@@ -535,16 +535,10 @@
       "name": "新見市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "防災マップ更新12,100千円（新規）・消防体制再編推進1,000千円（新規）"
     },
     {
       "name": "備前市",
