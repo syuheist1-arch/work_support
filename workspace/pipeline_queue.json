@@ -568,16 +568,10 @@
       "name": "赤磐市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防指令中間更新・デジタル無線調達支援委託（消防施設費67,297千円内）・消防費963,292千円"
     },
     {
       "name": "真庭市",
