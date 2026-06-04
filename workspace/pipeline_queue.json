@@ -370,16 +370,10 @@
       "name": "川本町",
       "prefecture": "島根県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": ["C_minutes", "E_analysis", "F_needs"],
+      "note": "治水対策543,000千円・排水管布設45,000千円。消防費詳細は予算書未公開"
     },
     {
       "name": "美郷町",
