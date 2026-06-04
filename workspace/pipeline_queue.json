@@ -490,31 +490,19 @@
       "name": "玉野市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "JSレンダリングサイトのため予算取得不可。役場TEL:0863-32-4111"
     },
     {
       "name": "笠岡市",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "J-ALERT連携6,710千円・ハザードマップ4,730千円（新規）・消防費964,610千円"
     },
     {
       "name": "井原市",
