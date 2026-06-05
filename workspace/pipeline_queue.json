@@ -816,16 +816,10 @@
       "name": "久米南町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費114,886千円(+2.3%)。橋梁防災対策60,500千円・町道防災対策34,000千円・消防団員新基準活動服3,700千円(新規)が最重要案件。"
     },
     {
       "name": "美咲町",
