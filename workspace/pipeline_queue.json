@@ -906,16 +906,10 @@
       "name": "東かがわ市",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "SMART CMSのJSレンダリングで令和8年度予算書取得不可。令和2年度決算消防費596,177千円を参考値として記録。要役場直接確認。"
     },
     {
       "name": "三豊市",
