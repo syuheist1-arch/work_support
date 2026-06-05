@@ -891,16 +891,10 @@
       "name": "さぬき市",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "公式サイトHTTP 503停止のため令和8年度予算書取得不可。令和7年度参考: 常備消防費757,481千円・消防施設費52,722千円。要役場直接確認。"
     },
     {
       "name": "東かがわ市",
