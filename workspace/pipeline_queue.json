@@ -888,16 +888,10 @@
       "name": "観音寺市",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費287,217千円(+16.4%)。消防ポンプ車29,205千円・消防屯所建設11,515千円・地震津波海岸堤防57,200千円が最重要案件。"
     },
     {
       "name": "さぬき市",
