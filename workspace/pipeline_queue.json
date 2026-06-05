@@ -915,16 +915,10 @@
       "name": "三豊市",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "骨格予算。消防費1,417,520千円(△18.0%)。小型動力ポンプ積載車・ため池水位計工事・詫間水門水位計更新が最重要案件。"
     },
     {
       "name": "土庄町",
