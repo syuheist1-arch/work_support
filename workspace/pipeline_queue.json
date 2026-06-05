@@ -873,16 +873,10 @@
       "name": "善通寺市",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費528,724千円(+5.3%)。消防車両整備更新（施政方針明記）・シェルターテント新規が最重要案件。詳細は予算書本体未公開。"
     },
     {
       "name": "観音寺市",
