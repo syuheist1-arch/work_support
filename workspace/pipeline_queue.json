@@ -819,31 +819,19 @@
       "name": "美咲町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費324,485千円(△9,678)。消防自動車整備12,846千円・防火水槽整備15,731千円・道路防災対策94,300千円(+44,300)が最重要案件。"
     },
     {
       "name": "和気町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "SMART CMSのJSレンダリングで令和8年度予算書取得不可。令和5年度決算消防費376,639千円を参考値として記録。要役場直接確認。"
     },
     {
       "name": "吉備中央町",
