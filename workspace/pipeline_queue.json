@@ -783,31 +783,19 @@
       "name": "勝央町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "予算書PDF未公開。広報誌・PyMuPDFで取得。消防費詳細不明。中学校体育館空調（避難所機能強化）設計が令和8年度案件。"
     },
     {
       "name": "奈義町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "予算書PDF完全取得。消防費228,182千円(△178,049)。消防機庫統合整備設計20,000千円・自助力向上防災装備品29,000千円が最重要案件。"
     },
     {
       "name": "西粟倉村",
