@@ -927,31 +927,19 @@
       "name": "小豆島町",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費457,327千円(△4.3%)。消防施設費15,140千円(+284.3%・車両整備)・猪谷池改修36,700千円・池田港陸閘改良25,000千円が最重要案件。"
     },
     {
       "name": "三木町",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費419,225千円(+3.1%)。款別概要のみ公開で詳細非公開。要役場直接確認。"
     },
     {
       "name": "直島町",
