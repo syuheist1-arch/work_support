@@ -837,31 +837,19 @@
       "name": "吉備中央町",
       "prefecture": "岡山県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費513,381千円(+10.2%)。増加要因の詳細は予算書本体で確認要。農業水路防災減災事業26,750千円。"
     },
     {
       "name": "高松市",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費5,885,862千円(+6.7%)。消防車両整備355,816千円・北消防署再整備設計81,063千円（新規）・小中学校体育館空調182,652千円（債務負担R9-26計79.9億円）が最重要案件。"
     },
     {
       "name": "丸亀市",
