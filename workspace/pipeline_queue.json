@@ -855,16 +855,10 @@
       "name": "丸亀市",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
-        "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
-        "G_report"
-      ],
-      "note": ""
+      "status": "done",
+      "phases_done": ["B_budget", "G_report"],
+      "phases_todo": [],
+      "note": "消防費1,526,562千円(△50.7%)。消防団機械器具置場新築2件・ため池観測システム・災害用備品63,671千円（新規）が最重要案件。"
     },
     {
       "name": "坂出市",
