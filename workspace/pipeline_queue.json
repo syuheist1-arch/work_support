@@ -775,7 +775,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "予算書本体(16056.pdf)は画像PDFのためテキスト抽出不可。概要PDFから施策情報を取得。個別金額未確認。"
     },
@@ -784,7 +787,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "予算書PDF未公開。広報誌・PyMuPDFで取得。消防費詳細不明。中学校体育館空調（避難所機能強化）設計が令和8年度案件。"
     },
@@ -793,7 +799,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "予算書PDF完全取得。消防費228,182千円(△178,049)。消防機庫統合整備設計20,000千円・自助力向上防災装備品29,000千円が最重要案件。"
     },
@@ -802,7 +811,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費91,393千円(+3,507)。避難所環境整備11,324千円・ハザードマップ更新2,910千円・緊急自然災害防止42,000千円が最重要案件。"
     },
@@ -811,7 +823,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費114,886千円(+2.3%)。橋梁防災対策60,500千円・町道防災対策34,000千円・消防団員新基準活動服3,700千円(新規)が最重要案件。"
     },
@@ -820,7 +835,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費324,485千円(△9,678)。消防自動車整備12,846千円・防火水槽整備15,731千円・道路防災対策94,300千円(+44,300)が最重要案件。"
     },
@@ -829,7 +847,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "SMART CMSのJSレンダリングで令和8年度予算書取得不可。令和5年度決算消防費376,639千円を参考値として記録。要役場直接確認。"
     },
@@ -838,7 +859,10 @@
       "prefecture": "岡山県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費513,381千円(+10.2%)。増加要因の詳細は予算書本体で確認要。農業水路防災減災事業26,750千円。"
     },
@@ -847,7 +871,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費5,885,862千円(+6.7%)。消防車両整備355,816千円・北消防署再整備設計81,063千円（新規）・小中学校体育館空調182,652千円（債務負担R9-26計79.9億円）が最重要案件。"
     },
@@ -856,7 +883,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費1,526,562千円(△50.7%)。消防団機械器具置場新築2件・ため池観測システム・災害用備品63,671千円（新規）が最重要案件。"
     },
@@ -865,7 +895,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費1,107,470千円(+2.2%)。消防通信指令施設整備+103,000千円・消防債91,700千円が最重要案件。"
     },
@@ -874,7 +907,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費528,724千円(+5.3%)。消防車両整備更新（施政方針明記）・シェルターテント新規が最重要案件。詳細は予算書本体未公開。"
     },
@@ -883,7 +919,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費287,217千円(+16.4%)。消防ポンプ車29,205千円・消防屯所建設11,515千円・地震津波海岸堤防57,200千円が最重要案件。"
     },
@@ -892,7 +931,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "公式サイトHTTP 503停止のため令和8年度予算書取得不可。令和7年度参考: 常備消防費757,481千円・消防施設費52,722千円。要役場直接確認。"
     },
@@ -901,7 +943,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "SMART CMSのJSレンダリングで令和8年度予算書取得不可。令和2年度決算消防費596,177千円を参考値として記録。要役場直接確認。"
     },
@@ -910,7 +955,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "骨格予算。消防費1,417,520千円(△18.0%)。小型動力ポンプ積載車・ため池水位計工事・詫間水門水位計更新が最重要案件。"
     },
@@ -919,7 +967,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費403,640千円(歳出比4.0%)。防災・減災対策事業群164,590千円・漁港護岸耐震化・津波対策が最重要案件。"
     },
@@ -928,7 +979,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費457,327千円(△4.3%)。消防施設費15,140千円(+284.3%・車両整備)・猪谷池改修36,700千円・池田港陸閘改良25,000千円が最重要案件。"
     },
@@ -937,7 +991,10 @@
       "prefecture": "香川県",
       "theme": "防災",
       "status": "done",
-      "phases_done": ["B_budget", "G_report"],
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
       "phases_todo": [],
       "note": "消防費419,225千円(+3.1%)。款別概要のみ公開で詳細非公開。要役場直接確認。"
     },
@@ -945,30 +1002,24 @@
       "name": "直島町",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
+      "phases_todo": [],
       "note": ""
     },
     {
       "name": "宇多津町",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
+      "phases_todo": [],
       "note": ""
     },
     {
@@ -990,15 +1041,12 @@
       "name": "琴平町",
       "prefecture": "香川県",
       "theme": "防災",
-      "status": "pending",
-      "phases_done": [],
-      "phases_todo": [
+      "status": "done",
+      "phases_done": [
         "B_budget",
-        "C_minutes",
-        "E_analysis",
-        "F_needs",
         "G_report"
       ],
+      "phases_todo": [],
       "note": ""
     },
     {
