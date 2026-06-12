@@ -1,0 +1,1082 @@
+{
+  "description": "調査パイプライン キュー。statusをpendingにすると次回セッションで自動処理される。",
+  "municipalities": [
+    {
+      "name": "鳥取県",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "調査済み"
+    },
+    {
+      "name": "鳥取市",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "E_analysis",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "議事録・ニーズ分析は未実施（骨格予算のみ調査）"
+    },
+    {
+      "name": "米子市",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "調査済み"
+    },
+    {
+      "name": "倉吉市",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "議事録・分析は未実施"
+    },
+    {
+      "name": "境港市",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "議事録・分析は未実施"
+    },
+    {
+      "name": "岩美町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "事業別明細非公開のため款計のみ。詳細は担当課への直接確認が必要"
+    },
+    {
+      "name": "若桜町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "予算書詳細非公開のため概要版のみ。ハザードマップ更新289万円が注目点"
+    },
+    {
+      "name": "智頭町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "防災無線操作卓更新9947万円・J-ALERT随意契約4-6月期発注予定"
+    },
+    {
+      "name": "八頭町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "小型可搬ポンプ5台・橋梁メンテ1億280万円が主要案件"
+    },
+    {
+      "name": "三朝町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "防災基盤整備(消防施設)9200万円新規・橋梁補修1億円超が主要案件"
+    },
+    {
+      "name": "湯梨浜町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防車両購入事業18,690千円（小型ポンプ積載車2台）・広域連合負担金271,655千円が主要案件。防災無線はMCA保守のみ"
+    },
+    {
+      "name": "琴浦町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防ポンプ自動車購入36,395千円（新規）・橋梁修繕5件・R7繰越情報通信基盤改修59,400千円（要確認）"
+    },
+    {
+      "name": "北栄町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "ハザードマップ作成13,090千円（新規）・道路舗装53,500千円・橋梁修繕1橋10,000千円が主要案件"
+    },
+    {
+      "name": "日吉津村",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "R8予算未公開（R7ベースで暫定レポート作成）。R8公開後に再調査が必要"
+    },
+    {
+      "name": "大山町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "防災マップ更新9,680千円（新規）・橋梁補修工事40,000千円・橋梁点検162橋27,000千円が主要案件"
+    },
+    {
+      "name": "南部町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "調査済み"
+    },
+    {
+      "name": "伯耆町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "調査済み（R8予算追加済み）"
+    },
+    {
+      "name": "日野町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "指定避難所生活環境改善40,600千円（新規）・J-ALERT整備8,400千円・橋梁補修89,100千円が主要案件"
+    },
+    {
+      "name": "江府町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "J-ALERT設備8,932千円（緊急防災・減災事業債）・ハザードマップ委託2,794千円・橋梁修繕56,000千円が主要案件"
+    },
+    {
+      "name": "日南町",
+      "prefecture": "鳥取県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "予算書PDF未公開。議会だよりNo.183ベースで作成。大宮地域振興センター改修1.6億円（避難所含む）・消防ホース214本更新"
+    },
+    {
+      "name": "松江市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防車両整備2.7億円・消防救急デジタル無線1,200万円・避難所空調整備1億854万円"
+    },
+    {
+      "name": "浜田市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防救急デジタル無線設備更新7,700千円（新規・設計）・消防施設等整備85,161千円・防災まちづくり45,502千円"
+    },
+    {
+      "name": "出雲市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防緊急通信指令施設機器更新201,600千円・消防施設整備計336,600千円・防災対策費80,100千円"
+    },
+    {
+      "name": "益田市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "大田市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "E_analysis",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "F_needs"
+      ],
+      "note": "予算調査済み。議事録未実施"
+    },
+    {
+      "name": "安来市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": "消防指令システム更新226,000千円（債務負担行為）が最重要案件"
+    },
+    {
+      "name": "江津市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": "防災マップ更新19,217千円・江津邑智消防組合庁舎改修144,837千円含む"
+    },
+    {
+      "name": "雲南市",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": "消防機器整備47,536千円・デジタル防災無線38,776千円（R7比2倍増）"
+    },
+    {
+      "name": "奥出雲町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": ""
+    },
+    {
+      "name": "飯南町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": "消防車両2台20,565千円・ハザードマップ新規2,660千円・防災無線バッテリー交換新規4,112千円"
+    },
+    {
+      "name": "川本町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": "治水対策543,000千円・排水管布設45,000千円。消防費詳細は予算書未公開"
+    },
+    {
+      "name": "美郷町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": ""
+    },
+    {
+      "name": "邑南町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "津和野町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": ""
+    },
+    {
+      "name": "吉賀町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "隠岐の島町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs"
+      ],
+      "note": ""
+    },
+    {
+      "name": "海士町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "公式サイトJSレンダリング・広報Flash形式のため予算詳細取得不可。役場TEL:08514-2-0114"
+    },
+    {
+      "name": "西ノ島町",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [
+        "C_minutes",
+        "E_analysis",
+        "F_needs",
+        "G_report"
+      ],
+      "note": ""
+    },
+    {
+      "name": "知夫村",
+      "prefecture": "島根県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "公式サイト503停止のため予算詳細取得不可。役場TEL:08514-8-2211"
+    },
+    {
+      "name": "岡山市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防救急デジタル無線940百万円・消防指令システム712百万円が主要案件"
+    },
+    {
+      "name": "倉敷市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "指令設備更新390,500千円・デジタル無線134,750千円・消防費+16.6%"
+    },
+    {
+      "name": "津山市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "骨格予算（市長選挙）のため詳細不可。6月補正後に再調査推奨"
+    },
+    {
+      "name": "玉野市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "JSレンダリングサイトのため予算取得不可。役場TEL:0863-32-4111"
+    },
+    {
+      "name": "笠岡市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "J-ALERT連携6,710千円・ハザードマップ4,730千円（新規）・消防費964,610千円"
+    },
+    {
+      "name": "井原市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "通信指令システム・デジタル無線更新358,963千円（消防組合）・消防費+46.3%"
+    },
+    {
+      "name": "総社市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "高規格救急自動車44,000千円・多機能型指揮支援車両（債務負担40,000千円）"
+    },
+    {
+      "name": "高梁市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "水道遠方監視装置更新88,000千円（新規）・内水排除277,100千円・消防費687,420千円"
+    },
+    {
+      "name": "新見市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "防災マップ更新12,100千円（新規）・消防体制再編推進1,000千円（新規）"
+    },
+    {
+      "name": "備前市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "J-ALERT更新（緊急防災事業債）・消防費909,019千円（+18.1%）"
+    },
+    {
+      "name": "瀬戸内市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "防災情報伝達システム更新49,500千円（新規・減災債100%）・学校空調205,581千円"
+    },
+    {
+      "name": "赤磐市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防指令中間更新・デジタル無線調達支援委託（消防施設費67,297千円内）・消防費963,292千円"
+    },
+    {
+      "name": "真庭市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "真庭市: 消防救急デジタル無線更新（債務負担382,462千円・R8-10）が最重要"
+    },
+    {
+      "name": "美作市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "美作市: 骨格予算。消防自動車整備81,200千円・防災公園整備230,942千円が主要案件"
+    },
+    {
+      "name": "浅口市",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "骨格予算。6月補正後に再調査推奨。倉敷市常備消防負担金76,366千円（新規）が注目点"
+    },
+    {
+      "name": "早島町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費291,372千円。消防施設整備18,961千円（ポンプ・積載車・ホース乾燥塔）が案件"
+    },
+    {
+      "name": "里庄町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "内水浸水想定氾濫解析業務・配水池耐震診断・配水管耐震化工事が第2四半期発注予定"
+    },
+    {
+      "name": "矢掛町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "公式サイト503エラーのため取得不可。役場TEL:0866-82-1010"
+    },
+    {
+      "name": "新庄村",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "公式サイト503エラーのため取得不可。役場TEL:0867-56-2211"
+    },
+    {
+      "name": "鏡野町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "予算書本体(16056.pdf)は画像PDFのためテキスト抽出不可。概要PDFから施策情報を取得。個別金額未確認。"
+    },
+    {
+      "name": "勝央町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "予算書PDF未公開。広報誌・PyMuPDFで取得。消防費詳細不明。中学校体育館空調（避難所機能強化）設計が令和8年度案件。"
+    },
+    {
+      "name": "奈義町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "予算書PDF完全取得。消防費228,182千円(△178,049)。消防機庫統合整備設計20,000千円・自助力向上防災装備品29,000千円が最重要案件。"
+    },
+    {
+      "name": "西粟倉村",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費91,393千円(+3,507)。避難所環境整備11,324千円・ハザードマップ更新2,910千円・緊急自然災害防止42,000千円が最重要案件。"
+    },
+    {
+      "name": "久米南町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費114,886千円(+2.3%)。橋梁防災対策60,500千円・町道防災対策34,000千円・消防団員新基準活動服3,700千円(新規)が最重要案件。"
+    },
+    {
+      "name": "美咲町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費324,485千円(△9,678)。消防自動車整備12,846千円・防火水槽整備15,731千円・道路防災対策94,300千円(+44,300)が最重要案件。"
+    },
+    {
+      "name": "和気町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "SMART CMSのJSレンダリングで令和8年度予算書取得不可。令和5年度決算消防費376,639千円を参考値として記録。要役場直接確認。"
+    },
+    {
+      "name": "吉備中央町",
+      "prefecture": "岡山県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費513,381千円(+10.2%)。増加要因の詳細は予算書本体で確認要。農業水路防災減災事業26,750千円。"
+    },
+    {
+      "name": "高松市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費5,885,862千円(+6.7%)。消防車両整備355,816千円・北消防署再整備設計81,063千円（新規）・小中学校体育館空調182,652千円（債務負担R9-26計79.9億円）が最重要案件。"
+    },
+    {
+      "name": "丸亀市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費1,526,562千円(△50.7%)。消防団機械器具置場新築2件・ため池観測システム・災害用備品63,671千円（新規）が最重要案件。"
+    },
+    {
+      "name": "坂出市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費1,107,470千円(+2.2%)。消防通信指令施設整備+103,000千円・消防債91,700千円が最重要案件。"
+    },
+    {
+      "name": "善通寺市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費528,724千円(+5.3%)。消防車両整備更新（施政方針明記）・シェルターテント新規が最重要案件。詳細は予算書本体未公開。"
+    },
+    {
+      "name": "観音寺市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費287,217千円(+16.4%)。消防ポンプ車29,205千円・消防屯所建設11,515千円・地震津波海岸堤防57,200千円が最重要案件。"
+    },
+    {
+      "name": "さぬき市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "公式サイトHTTP 503停止のため令和8年度予算書取得不可。令和7年度参考: 常備消防費757,481千円・消防施設費52,722千円。要役場直接確認。"
+    },
+    {
+      "name": "東かがわ市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "SMART CMSのJSレンダリングで令和8年度予算書取得不可。令和2年度決算消防費596,177千円を参考値として記録。要役場直接確認。"
+    },
+    {
+      "name": "三豊市",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "骨格予算。消防費1,417,520千円(△18.0%)。小型動力ポンプ積載車・ため池水位計工事・詫間水門水位計更新が最重要案件。"
+    },
+    {
+      "name": "土庄町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費403,640千円(歳出比4.0%)。防災・減災対策事業群164,590千円・漁港護岸耐震化・津波対策が最重要案件。"
+    },
+    {
+      "name": "小豆島町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費457,327千円(△4.3%)。消防施設費15,140千円(+284.3%・車両整備)・猪谷池改修36,700千円・池田港陸閘改良25,000千円が最重要案件。"
+    },
+    {
+      "name": "三木町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": "消防費419,225千円(+3.1%)。款別概要のみ公開で詳細非公開。要役場直接確認。"
+    },
+    {
+      "name": "直島町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": ""
+    },
+    {
+      "name": "宇多津町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": ""
+    },
+    {
+      "name": "綾川町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": ""
+    },
+    {
+      "name": "琴平町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": ""
+    },
+    {
+      "name": "多度津町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": ""
+    },
+    {
+      "name": "まんのう町",
+      "prefecture": "香川県",
+      "theme": "防災",
+      "status": "done",
+      "phases_done": [
+        "B_budget",
+        "G_report"
+      ],
+      "phases_todo": [],
+      "note": ""
+    }
+  ],
+  "phases": {
+    "B_budget": "予算調査（collector-budget）",
+    "C_minutes": "議事録調査（collector-minutes）",
+    "D_contracts": "受注実績調査（collector-budget 受注モード）",
+    "E_analysis": "予算分析（analyst-budget）",
+    "F_needs": "ニーズ分析（analyst-needs）",
+    "G_report": "レポート作成（qa-editor）"
+  }
+}
